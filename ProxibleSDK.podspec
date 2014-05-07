@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Headers/*.h'
   s.preserve_paths = 'libProxibleSDK.a'
   s.library = 'ProxibleSDK'
-  s.resource_bundle ='ProxibleSDK.bundle'
+  s.resources ='ProxibleSDK.bundle'
   
   s.requires_arc = true
   s.ios.deployment_target = '7.0'
