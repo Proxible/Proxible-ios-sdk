@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name     = ‘ProxibleSDK’
+  s.name     = 'ProxibleSDK'
   s.version  = '0.0.1'
   s.license      = {
     :type => 'Commercial',
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/Proxible/Proxible-ios-sdk.git', :tag => '0.0.1' }
   s.platform = :ios, '7.0'
   s.source_files = 'Headers/*.h'
+  s.resource = 'ProxibleSDK.bundle'
   s.preserve_paths = 'libProxibleSDK.a'
   s.library = 'ProxibleSDK'
   
