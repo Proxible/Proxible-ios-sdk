@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
               https://proxible.com
     LICENSE
   }
-  s.summary  = 'BlueCatsSDK for micro-location.'
+  s.summary  = ‘ProxibleSDK Smart Spaces for micro-location.'
   s.homepage = 'http://www.proxible.com'
   s.authors   = { 'Proxible' => 'conrad@proxible.com' }
   s.source   = { :git => 'https://github.com/Proxible/Proxible-ios-sdk.git', :tag => '0.0.1' }
