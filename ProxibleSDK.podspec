@@ -27,4 +27,7 @@ Pod::Spec.new do |s|
   
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ProxibleSDK/"' }
 
+  s.ios.dependency 'AFNetworking', '~> 2.1.0'
+  s.ios.dependency 'MagicalRecord', '~> 2.2'
+
 end
