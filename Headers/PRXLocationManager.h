@@ -27,7 +27,7 @@ extern NSString *const PRXLocationManagerDidUpdateProximityServicesAvailibility;
 // The keys used in the notification UserInfo
 extern NSString *const PRXLocationManagerNotificationSmartSpaceItem;// They key for obtaining the Smart Space from the notification userInfo
 
-/*
+/**
  *  PRXLocationManager
  *
  *  Discussion:
@@ -36,6 +36,10 @@ extern NSString *const PRXLocationManagerNotificationSmartSpaceItem;// They key 
 @interface PRXLocationManager : NSObject
 
 #pragma  mark - Location Services
+
+///-------------------------------------------------
+/// @name LocationServices
+///-------------------------------------------------
 
 /*! Returns the application’s authorization status for using location services.
  *
@@ -72,6 +76,10 @@ extern NSString *const PRXLocationManagerNotificationSmartSpaceItem;// They key 
 +(BOOL)proximityServicesEnabled;
 
 #pragma  mark - Shared Manager
+
+///-------------------------------------------------
+/// @name SharedManager
+///-------------------------------------------------
 
 /*!
  *  Shared Manager
@@ -126,6 +134,10 @@ extern NSString *const PRXLocationManagerNotificationSmartSpaceItem;// They key 
 
 #pragma  mark - Smart Space Monitoring
 
+///-------------------------------------------------
+/// @name SmartspaceMonitoring
+///-------------------------------------------------
+
 /*! Starts monitoring the specified Smart Space.
  *
  *  You must call this method once for each Smart Space you want to monitor. If an existing Smart Space with the same identifier is already
@@ -163,6 +175,10 @@ extern NSString *const PRXLocationManagerNotificationSmartSpaceItem;// They key 
 -(BOOL)isMonitoringSmartSpace:(PRXSmartSpace*)space;
 
 #pragma  mark - Smart Space Ranging
+
+///-------------------------------------------------
+/// @name SmartspaceRanging
+///-------------------------------------------------
 
 /*! Starts the delivery of notifications for beacons in the specified Smart Space.
  *

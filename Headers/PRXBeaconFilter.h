@@ -10,11 +10,10 @@
 @import Foundation;
 @import CoreLocation;
 
-//TODO: Finalize Class Comments
 //TODO: Write unit tests
 //TODO: Add sorting as a paramter
 
-/*
+/**
  *  PRXBeaconFilter
  *
  *  Discussion:
@@ -24,20 +23,45 @@
 
 /*! Returns a Array with beacons filtered on the given proximity.
  *
- *  @parm beacons An array of beacons to filter 
- *  @parm proximity The proximity a beacon has to be in
- *  @parm closest A boolean indicating if only the closest beacon should be returend. If NO all beacons mathing the filter criteria are returned. If YES of all the beacons mathing the filter criteria only the closest of them all is returned. The beacons accucary is used to determine the closest beacon. 
+ *  @param beacons      An array of beacons to filter
+ *  @param proximity    The proximity a beacon has to be in
+ *  @param closest      A boolean indicating if only the closest beacon should be returend. If NO all beacons mathing the filter criteria are returned. If YES of all the beacons mathing the filter criteria only the closest of them all is returned. The beacons accucary is used to determine the closest beacon.
  *
  *  @return Array of beacons that match the filter criteria. 
  */
 +(NSArray*)filterBeacons:(NSArray*)beacons withProximity:(CLProximity)proximity getClosest:(BOOL)closest;
 
-
+/*! Returns a Array with beacons filtered on the given proximity and accuracy.
+ *
+ *  @param beacons      An array of beacons to filter
+ *  @param proximity    The proximity a beacon has to be in
+ *  @param accuracy     The accuracy of the beacon proximity from the mobile device
+ *  @param closest      A boolean indicating if only the closest beacon should be returend. If NO all beacons mathing the filter criteria are returned. If YES of all the beacons mathing the filter criteria only the closest of them all is returned. The beacons accucary is used to determine the closest beacon.
+ *
+ *  @return Array of beacons that match the filter criteria.
+ */
 +(NSArray*)filterBeacons:(NSArray*)beacons withProximity:(CLProximity)proximity accuracy:(CLLocationAccuracy)accuracy getClosest:(BOOL)closest;
 
+/*! Returns a Array with beacons filtered on the given list of proximities
+ *
+ *  @param beacons      An array of beacons to filter
+ *  @param proximities  The list of proximities a beacon has to be in
+ *  @param closest      A boolean indicating if only the closest beacon should be returend. If NO all beacons mathing the filter criteria are returned. If YES of all the beacons mathing the filter criteria only the closest of them all is returned. The beacons accucary is used to determine the closest beacon.
+ *
+ *  @return Array of beacons that match the filter criteria.
+ */
 +(NSArray*)filterBeacons:(NSArray*)beacons withProximities:(NSArray*)proximities getClosest:(BOOL)closest;
 
 
+/*! Returns a Array with beacons filtered on the given list of proximities and accuracy
+ *
+ *  @param beacons      An array of beacons to filter
+ *  @param proximities  The list of proximities a beacon has to be in
+ *  @param accuracy     The accuracy of the beacon proximity from the mobile device
+ *  @param closest      A boolean indicating if only the closest beacon should be returend. If NO all beacons mathing the filter criteria are returned. If YES of all the beacons mathing the filter criteria only the closest of them all is returned. The beacons accucary is used to determine the closest beacon.
+ *
+ *  @return Array of beacons that match the filter criteria.
+ */
 +(NSArray*)filterBeacons:(NSArray*)beacons withProximities:(NSArray*)proximities accuracy:(CLLocationAccuracy)accuracy getClosest:(BOOL)closest;
 
 @end

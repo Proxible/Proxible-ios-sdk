@@ -19,14 +19,43 @@
 extern NSString * const PRXTrackingOptionEnabled;
 
 //TODO: Set up global configuration methods. Like for setting application key and API key
+/**
+ *  ProxibleSDK
+ *
+ *  Discussion:
+ *    The ProxibleSDK class acts the main handler and interface for the various features of this SDK.
+ */
 @interface ProxibleSDK : NSObject
 
-+(void)setCompanyID:(NSString*)companyID applicationID:(NSString*)appID apiKey:(NSString*)apiKey;
+/*! Initializes the SDK with the given company ID, application ID and apikey
+ *
+ * @param appID     The ID of the app accessing the SDK
+ * @param apiKey    The APIKey required to access the cloud via the SDK
+ */
++(void)setApplicationID:(NSString*)appID apiKey:(NSString*)apiKey;
 
+/*! Set various options for the SDK, currently the only option available is to enable/disable tracking
+ *
+ * @param options   The dictionary containing various options for the SDK
+ */
 +(void)setOptions:(NSDictionary*)options;
 
+/*! Returns if tracking is enabled or not
+ *
+ * @return YES- if tracking is enabled, otherwise NO
+ */
 +(BOOL)trackingEnabled;
+
+/*! Returns the ID of the application associated with the SDK
+ *
+ * @return The ID of the application associated with the SDK
+ */
 +(NSString*)applicationID;
+
+/*! Returns the apiKey that is required to access the cloud via the SDK
+ *
+ * @return The apiKey that is required to access the cloud via the SDK
+ */
 +(NSString*)apiKey;
-+(NSString*)companyID;
+
 @end

@@ -12,8 +12,11 @@
 #import "PRXSmartSpace.h"
 
 /**
- * Delegate of the PRXLocationManager
- * The delegate gets informed about several actions in the SavingsGoalViewController, e.g. tapping on the bar
+ * PRXLocationManagerDelegate
+ *
+ * Discussion:
+ * This class acts as a delegate of the PRXLocationManager
+ * The delegate gets informed about several actions of monitoring a smartspace
  *
  */
 @protocol PRXLocationManagerDelegate <NSObject>
@@ -23,88 +26,92 @@
 
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when the state of a smartspace is determined
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager that determines the state
+ * @param state     The current determined state of the smartspace
+ * @param space     The smartspace for which the state is determined
  */
 - (void)locationManager:(PRXLocationManager*)manager didDetermineState:(PRXSmartSpaceState)state forSmartSpace:(PRXSmartSpace*)space;
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when the mobile device enters a monitored smartspace
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager that detects the entry
+ * @param space     The smartspace that the mobile device enters
  */
 - (void)locationManager:(PRXLocationManager*)manager didEnterSmartSpace:(PRXSmartSpace*)space;
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when the mobile device exits a monitored smartspace
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager that detects the exit
+ * @param space     The smartspace that the mobile device exits
  */
 - (void)locationManager:(PRXLocationManager*)manager didExitSmartSpace:(PRXSmartSpace*)space;
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when the monitoring of smartspace fails
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager for which the monitoring fails
+ * @param space     The smartspace that fails to be monitored
+ * @param error     The error generated while monitoring the smartspace
  */
 - (void)locationManager:(PRXLocationManager*)manager monitoringDidFailForSmartSpace:(PRXSmartSpace *)space withError:(NSError*)error;
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when the monitoring of smartspace starts
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager that starts the monitoring
+ * @param space     The smartspace for which monitoring is started
  */
 - (void)locationManager:(PRXLocationManager*)manager didStartMonitoringForSmartSpace:(PRXSmartSpace*)space;
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when the monitoring of smartspace stops
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager that stops the monitoring
+ * @param space     The smartspace for which monitoring is stopped
  */
 - (void)locationManager:(PRXLocationManager*)manager didStopMonitoringForSmartSpace:(PRXSmartSpace*)space;
 
 #pragma mark - Responding to Ranging Events
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when beacons are ranged
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager that ranges beacons
+ * @param beacons   The list of beacons that are being ranged
+ * @param space     The smartspace to which the beacons belongs to
  */
 - (void)locationManager:(PRXLocationManager*)manager didRangeBeacons:(NSArray*)beacons inSmartSpace:(PRXSmartSpace*)space;
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when beacons ranging fails
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager that ranges beacons
+ * @param space     The smartspace to which the beacons belongs to
+ * @param error     The error that's generated while ranging
  */
 - (void)locationManager:(PRXLocationManager*)manager rangingBeaconsDidFailForSmartSpace:(PRXSmartSpace*)space withError:(NSError *)error;
 
 #pragma mark - Responding to Proximity Services Availibility
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when availability of proximity service is updated
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager for which the availability status is updated
+ * @param available Indicates if Proximity services are available or not
  */
 -(void)locationManager:(PRXLocationManager*)manager didUpdateProximityServicesAvailibility:(BOOL)available;
 
 #pragma mark - Responding to Errors
 
 /**
- * delegate methods that will tell the delegate the selected index in the indecesView
+ * delegate method when Location manager service fails
  *
- * @param view The view that calls the delegate
- * @param button The button that was tapped by the user
+ * @param manager   The manager for which the service fails
+ * @param error     The error that's generated
  */
 -(void)locationManager:(PRXLocationManager*)manager didFailWithError:(NSError*)error;
 
