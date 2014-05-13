@@ -115,6 +115,9 @@
 		613B88FB1922205B0056F295 /* SDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				613B892A192220DE0056F295 /* Controllers */,
+				613B8929192220D90056F295 /* Views */,
+				613B8928192220D40056F295 /* Model  */,
 				613B89041922205B0056F295 /* PSDAppDelegate.h */,
 				613B89051922205B0056F295 /* PSDAppDelegate.m */,
 				613B890A1922205B0056F295 /* Images.xcassets */,
@@ -151,6 +154,27 @@
 				613B891B1922205B0056F295 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		613B8928192220D40056F295 /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model ";
+			sourceTree = "<group>";
+		};
+		613B8929192220D90056F295 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		613B892A192220DE0056F295 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
