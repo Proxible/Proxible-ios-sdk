@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PRXBeaconFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PRXBeaconFilter</TokenIdentifier>
+			<Abstract type="html">PRXBeaconFilter</Abstract>
+			<DeclaredIn>PRXBeaconFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXBeaconFilter/filterBeacons:withProximity:getClosest:</TokenIdentifier>
+			<Abstract type="html">Returns a Array with beacons filtered on the given proximity.</Abstract>
+			<DeclaredIn>PRXBeaconFilter.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)filterBeacons:(NSArray *)beacons withProximity:(CLProximity)proximity getClosest:(BOOL)closest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beacons</Name>
+					<Abstract type="html">An array of beacons to filter</Abstract>
+				</Parameter><Parameter>
+					<Name>proximity</Name>
+					<Abstract type="html">The proximity a beacon has to be in</Abstract>
+				</Parameter><Parameter>
+					<Name>closest</Name>
+					<Abstract type="html">A boolean indicating if only the closest beacon should be returend. If NO all beacons mathing the filter criteria are returned. If YES of all the beacons mathing the filter criteria only the closest of them all is returned. The beacons accucary is used to determine the closest beacon.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Array of beacons that match the filter criteria.</Abstract></ReturnValue>
+			<Anchor>//api/name/filterBeacons:withProximity:getClosest:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXBeaconFilter/filterBeacons:withProximity:accuracy:getClosest:</TokenIdentifier>
+			<Abstract type="html">Returns a Array with beacons filtered on the given proximity and accuracy.</Abstract>
+			<DeclaredIn>PRXBeaconFilter.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)filterBeacons:(NSArray *)beacons withProximity:(CLProximity)proximity accuracy:(CLLocationAccuracy)accuracy getClosest:(BOOL)closest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beacons</Name>
+					<Abstract type="html">An array of beacons to filter</Abstract>
+				</Parameter><Parameter>
+					<Name>proximity</Name>
+					<Abstract type="html">The proximity a beacon has to be in</Abstract>
+				</Parameter><Parameter>
+					<Name>accuracy</Name>
+					<Abstract type="html">The accuracy of the beacon proximity from the mobile device</Abstract>
+				</Parameter><Parameter>
+					<Name>closest</Name>
+					<Abstract type="html">A boolean indicating if only the closest beacon should be returend. If NO all beacons mathing the filter criteria are returned. If YES of all the beacons mathing the filter criteria only the closest of them all is returned. The beacons accucary is used to determine the closest beacon.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Array of beacons that match the filter criteria.</Abstract></ReturnValue>
+			<Anchor>//api/name/filterBeacons:withProximity:accuracy:getClosest:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXBeaconFilter/filterBeacons:withProximities:getClosest:</TokenIdentifier>
+			<Abstract type="html">Returns a Array with beacons filtered on the given list of proximities</Abstract>
+			<DeclaredIn>PRXBeaconFilter.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)filterBeacons:(NSArray *)beacons withProximities:(NSArray *)proximities getClosest:(BOOL)closest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beacons</Name>
+					<Abstract type="html">An array of beacons to filter</Abstract>
+				</Parameter><Parameter>
+					<Name>proximities</Name>
+					<Abstract type="html">The list of proximities a beacon has to be in</Abstract>
+				</Parameter><Parameter>
+					<Name>closest</Name>
+					<Abstract type="html">A boolean indicating if only the closest beacon should be returend. If NO all beacons mathing the filter criteria are returned. If YES of all the beacons mathing the filter criteria only the closest of them all is returned. The beacons accucary is used to determine the closest beacon.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Array of beacons that match the filter criteria.</Abstract></ReturnValue>
+			<Anchor>//api/name/filterBeacons:withProximities:getClosest:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXBeaconFilter/filterBeacons:withProximities:accuracy:getClosest:</TokenIdentifier>
+			<Abstract type="html">Returns a Array with beacons filtered on the given list of proximities and accuracy</Abstract>
+			<DeclaredIn>PRXBeaconFilter.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)filterBeacons:(NSArray *)beacons withProximities:(NSArray *)proximities accuracy:(CLLocationAccuracy)accuracy getClosest:(BOOL)closest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beacons</Name>
+					<Abstract type="html">An array of beacons to filter</Abstract>
+				</Parameter><Parameter>
+					<Name>proximities</Name>
+					<Abstract type="html">The list of proximities a beacon has to be in</Abstract>
+				</Parameter><Parameter>
+					<Name>accuracy</Name>
+					<Abstract type="html">The accuracy of the beacon proximity from the mobile device</Abstract>
+				</Parameter><Parameter>
+					<Name>closest</Name>
+					<Abstract type="html">A boolean indicating if only the closest beacon should be returend. If NO all beacons mathing the filter criteria are returned. If YES of all the beacons mathing the filter criteria only the closest of them all is returned. The beacons accucary is used to determine the closest beacon.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Array of beacons that match the filter criteria.</Abstract></ReturnValue>
+			<Anchor>//api/name/filterBeacons:withProximities:accuracy:getClosest:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

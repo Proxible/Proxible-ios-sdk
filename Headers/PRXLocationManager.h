@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Proxible B.V. All rights reserved.
 //
 
-//TODO: Finalize Class Comments
-
 @import Foundation;
 @import CoreLocation;
 

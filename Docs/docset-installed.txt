@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/conradbartels-daal/Library/Developer/Shared/Documentation/DocSets/com.Proxible.ProxibleSDK.docset
+Time: 2014-05-13 09:31:05 +0000

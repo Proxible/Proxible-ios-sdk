@@ -69,4 +69,11 @@
  */
 - (CLLocation *)location;
 
+/**
+ *  The full string representation of the addresss with the components seperated by commas.
+ *
+ *  @return String representation of full address seperated by commas.
+ */
+-(NSString*)fullAddress;
+
 @end

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PRXLocationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PRXLocationManager</TokenIdentifier>
+			<Abstract type="html">PRXLocationManager</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXLocationManager/authorizationStatus</TokenIdentifier>
+			<Abstract type="html">Returns the application’s authorization status for using location services.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (CLAuthorizationStatus)authorizationStatus</Declaration>
+			
+			<ReturnValue><Abstract type="html">A value indicating whether the application is authorized to use location services.</Abstract></ReturnValue>
+			<Anchor>//api/name/authorizationStatus</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXLocationManager/isSmartSpaceMonitoringAvailable</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean indicating whether the device supports beacon region monitoring.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isSmartSpaceMonitoringAvailable</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the device supports beacon region monitoring or NO if it does not.</Abstract></ReturnValue>
+			<Anchor>//api/name/isSmartSpaceMonitoringAvailable</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXLocationManager/isBeaconRangingAvailable</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean indicating whether the device supports ranging of Bluetooth beacons.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isBeaconRangingAvailable</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the device supports ranging or NO if it does not.</Abstract></ReturnValue>
+			<Anchor>//api/name/isBeaconRangingAvailable</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXLocationManager/locationServicesEnabled</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating whether location services are enabled on the device.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)locationServicesEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if proximity services are enabled or NO if they are not.</Abstract></ReturnValue>
+			<Anchor>//api/name/locationServicesEnabled</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXLocationManager/proximityServicesEnabled</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating whether proximity services are enabled on the device.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)proximityServicesEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if proximity services are enabled or NO if they are not.</Abstract></ReturnValue>
+			<Anchor>//api/name/proximityServicesEnabled</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXLocationManager/sharedManager</TokenIdentifier>
+			<Abstract type="html">Shared Manager</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (PRXLocationManager *)sharedManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">The Shared Location Manager</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXLocationManager/setSharedManager:</TokenIdentifier>
+			<Abstract type="html">Set the shared Manager</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>+ (void)setSharedManager:(PRXLocationManager *)manager</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">A LocationManager to set as the shared manager</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSharedManager:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The PRXLocationManager&apos;s delegate object</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PRXLocationManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/delegate</TokenIdentifier>
+			<Abstract type="html">The PRXLocationManager&apos;s delegate object</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PRXLocationManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXLocationManager/delegate</TokenIdentifier>
+			<Abstract type="html">The PRXLocationManager&apos;s delegate object</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PRXLocationManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/setMonitoredSmartSpaces:</TokenIdentifier>
+			<Abstract type="html">Retrieve a set of objects for the smart spaces that are currently being monitored.  If any location manager
+has been instructed to monitor a smart space, during this or previous launches of your application, it will
+be present in this set.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSSet *monitoredSmartSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/monitoredSmartSpaces</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/monitoredSmartSpaces</TokenIdentifier>
+			<Abstract type="html">Retrieve a set of objects for the smart spaces that are currently being monitored.  If any location manager
+has been instructed to monitor a smart space, during this or previous launches of your application, it will
+be present in this set.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSSet *monitoredSmartSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/monitoredSmartSpaces</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXLocationManager/monitoredSmartSpaces</TokenIdentifier>
+			<Abstract type="html">Retrieve a set of objects for the smart spaces that are currently being monitored.  If any location manager
+has been instructed to monitor a smart space, during this or previous launches of your application, it will
+be present in this set.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSSet *monitoredSmartSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/monitoredSmartSpaces</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/setRangedSmartSpaces:</TokenIdentifier>
+			<Abstract type="html">Retrieve a set of objects representing the smart spaces for which this location manager is actively providing ranging.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSSet *rangedSmartSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/rangedSmartSpaces</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/rangedSmartSpaces</TokenIdentifier>
+			<Abstract type="html">Retrieve a set of objects representing the smart spaces for which this location manager is actively providing ranging.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSSet *rangedSmartSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/rangedSmartSpaces</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXLocationManager/rangedSmartSpaces</TokenIdentifier>
+			<Abstract type="html">Retrieve a set of objects representing the smart spaces for which this location manager is actively providing ranging.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSSet *rangedSmartSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/rangedSmartSpaces</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/setIsMonitoring:</TokenIdentifier>
+			<Abstract type="html">Boolean that indicates whether monitoring is enabled</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isMonitoring</Declaration>
+			
+			
+			<Anchor>//api/name/isMonitoring</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/isMonitoring</TokenIdentifier>
+			<Abstract type="html">Boolean that indicates whether monitoring is enabled</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isMonitoring</Declaration>
+			
+			
+			<Anchor>//api/name/isMonitoring</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXLocationManager/isMonitoring</TokenIdentifier>
+			<Abstract type="html">Boolean that indicates whether monitoring is enabled</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isMonitoring</Declaration>
+			
+			
+			<Anchor>//api/name/isMonitoring</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/setIsRanging:</TokenIdentifier>
+			<Abstract type="html">Boolean that indicates whether ranging is enabled</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isRanging</Declaration>
+			
+			
+			<Anchor>//api/name/isRanging</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/isRanging</TokenIdentifier>
+			<Abstract type="html">Boolean that indicates whether ranging is enabled</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isRanging</Declaration>
+			
+			
+			<Anchor>//api/name/isRanging</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXLocationManager/isRanging</TokenIdentifier>
+			<Abstract type="html">Boolean that indicates whether ranging is enabled</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) BOOL isRanging</Declaration>
+			
+			
+			<Anchor>//api/name/isRanging</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/initWithDelegate:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an PRXLocationManager object with the specified object as it&apos;s delegate</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDelegate:(id&lt;PRXLocationManagerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">A delegate object that wil respond to location manager updates</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new PRXLocationManager object</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDelegate:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/startMonitoringForSmartSpace:</TokenIdentifier>
+			<Abstract type="html">Starts monitoring the specified Smart Space.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)startMonitoringForSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The Smart Space object that defines the boundary to monitor. This parameter must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startMonitoringForSmartSpace:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/stopMonitoringForSmartSpace:</TokenIdentifier>
+			<Abstract type="html">Stop monitoring the specified Smart Space.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stopMonitoringForSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The Smart Space object currently being monitored. This parameter must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/stopMonitoringForSmartSpace:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/stopMonitoringAllSmartSpaces</TokenIdentifier>
+			<Abstract type="html">Stop Monitoring all Smart Spaces curently being monitored by the location manager.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stopMonitoringAllSmartSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/stopMonitoringAllSmartSpaces</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/requestStateForSmartSpace:</TokenIdentifier>
+			<Abstract type="html">Retrieves the state of a Smart Space asynchronously.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)requestStateForSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The Smart Space whose state you want to know.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/requestStateForSmartSpace:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/isMonitoringSmartSpace:</TokenIdentifier>
+			<Abstract type="html">Check if the specified Smart Space is currently being monitored</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isMonitoringSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The Smart Space to check if being monitored</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">BOOL returns Yes if the Smart Space is currently being monitored No if it is not.</Abstract></ReturnValue>
+			<Anchor>//api/name/isMonitoringSmartSpace:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/startRangingBeaconsInSmartSpace:</TokenIdentifier>
+			<Abstract type="html">Starts the delivery of notifications for beacons in the specified Smart Space.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)startRangingBeaconsInSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The Smart Space object that defines the identifying information for the targeted beacons. The number of beacons represented by this Smart Space object depends on which identifier values you use to initialize it. Beacons must match all of the identifiers you specify.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startRangingBeaconsInSmartSpace:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/stopRangingBeaconsInSmartSpace:</TokenIdentifier>
+			<Abstract type="html">Stops the delivery of notifications for the specified Smart Space.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stopRangingBeaconsInSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The Smart Space that identifies the beacons.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/stopRangingBeaconsInSmartSpace:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/stopRangingBeaconsInAllSmartSpaces</TokenIdentifier>
+			<Abstract type="html">Stops the delivery of notifications for all Smart Spaces currently being ranged by the location manager.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stopRangingBeaconsInAllSmartSpaces</Declaration>
+			
+			
+			<Anchor>//api/name/stopRangingBeaconsInAllSmartSpaces</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/isRangingSmartSpace:</TokenIdentifier>
+			<Abstract type="html">Returns a boolean if the specified Smart Space is currently being ranged</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isRangingSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The Smart Space to check if being ranged</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns Yes if the Smart Space is being ranged. No if it is not.</Abstract></ReturnValue>
+			<Anchor>//api/name/isRangingSmartSpace:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

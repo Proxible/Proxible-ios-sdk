@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <ProxibleSDK/PRXSmartSpace.h>
+#import <ProxibleSDK/PRXAddress.h>
 #import <ProxibleSDK/PRXContent.h>
 #import <ProxibleSDK/PRXBeacon.h>
 #import <ProxibleSDK/PRXLocationManager.h>
@@ -18,7 +19,6 @@
 
 extern NSString * const PRXTrackingOptionEnabled;
 
-//TODO: Set up global configuration methods. Like for setting application key and API key
 /**
  *  ProxibleSDK
  *
