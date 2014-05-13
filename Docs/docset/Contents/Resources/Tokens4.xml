@@ -132,6 +132,43 @@
             <NodeRef refid="4"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/initWithContent:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a new PRXContent with a context represented by the corresponding core data object</Abstract>
+			<DeclaredIn>PRXContent.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithContent:(PRXMContent *)content</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>content</Name>
+					<Abstract type="html">The content data object represented by the core data model (PRXMContent)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly created PRXContent object</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContent:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/initWithTextContents:mediaContents:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a new PRXContent with a raw list of text contents and media contents</Abstract>
+			<DeclaredIn>PRXContent.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithTextContents:(NSDictionary *)textContants mediaContents:(NSDictionary *)mediaContents</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>textContants</Name>
+					<Abstract type="html">The list of the text contents corresponding to the content data</Abstract>
+				</Parameter><Parameter>
+					<Name>mediaContents</Name>
+					<Abstract type="html">The list of media contents corresponding to the content data</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a newly created PRXContent object</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTextContents:mediaContents:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

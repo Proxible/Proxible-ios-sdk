@@ -348,6 +348,100 @@
             <NodeRef refid="2"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXBeacon/initWithProximityUUID:major:minor:</TokenIdentifier>
+			<Abstract type="html">Initializes and creates a beacon object based on UUID, major and minor data of the beacon region</Abstract>
+			<DeclaredIn>PRXBeacon.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithProximityUUID:(NSUUID *)proximityUUID major:(CLBeaconMajorValue)major minor:(CLBeaconMinorValue)minor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>proximityUUID</Name>
+					<Abstract type="html">The 16 byte UUID of the beacon region</Abstract>
+				</Parameter><Parameter>
+					<Name>major</Name>
+					<Abstract type="html">The 2 byte Major value of the beacon region</Abstract>
+				</Parameter><Parameter>
+					<Name>minor</Name>
+					<Abstract type="html">The 2 byte Minor value of the beacon region</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created beacon object based on UUID, major and minor data of the beacon region</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithProximityUUID:major:minor:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXBeacon/updateBeaconProximity:accucary:rsssi:</TokenIdentifier>
+			<Abstract type="html">Updates the current beacon object with the proximity details obtained from the corelocation data</Abstract>
+			<DeclaredIn>PRXBeacon.m</DeclaredIn>
+			
+			<Declaration>- (void)updateBeaconProximity:(CLProximity)proximity accucary:(CLLocationAccuracy)accuracy rsssi:(NSInteger)rssi</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>proximity</Name>
+					<Abstract type="html">The proxmity of the beacon from the mobile device, namely: Immediate, Nearby, Far, Unknown</Abstract>
+				</Parameter><Parameter>
+					<Name>accuracy</Name>
+					<Abstract type="html">The accuracy data calculated by the corelocation of the beacon, usually represents the approximate distance between the mobile device and beacon in terms of [m]</Abstract>
+				</Parameter><Parameter>
+					<Name>rssi</Name>
+					<Abstract type="html">The RSSI value of the signal received by the mobile device from the beacon</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created beacon object based on UUID, major and minor data of the beacon region</Abstract></ReturnValue>
+			<Anchor>//api/name/updateBeaconProximity:accucary:rsssi:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXBeacon/beaconIdentifier</TokenIdentifier>
+			<Abstract type="html">The beacon identifier string created from the proximity UUID, major and minor parameters of the beacon region</Abstract>
+			<DeclaredIn>PRXBeacon.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)beaconIdentifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">String representation of RegionID</Abstract></ReturnValue>
+			<Anchor>//api/name/beaconIdentifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXBeacon/setBeacon:</TokenIdentifier>
+			<Abstract type="html">The corelocation beacon object corresponding to the current beacon</Abstract>
+			<DeclaredIn>PRXBeacon__Private.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CLBeacon *beacon</Declaration>
+			
+			
+			<Anchor>//api/name/beacon</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXBeacon/beacon</TokenIdentifier>
+			<Abstract type="html">The corelocation beacon object corresponding to the current beacon</Abstract>
+			<DeclaredIn>PRXBeacon__Private.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CLBeacon *beacon</Declaration>
+			
+			
+			<Anchor>//api/name/beacon</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXBeacon/beacon</TokenIdentifier>
+			<Abstract type="html">The corelocation beacon object corresponding to the current beacon</Abstract>
+			<DeclaredIn>PRXBeacon__Private.h</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) CLBeacon *beacon</Declaration>
+			
+			
+			<Anchor>//api/name/beacon</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

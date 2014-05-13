@@ -19,6 +19,7 @@
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
 						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
 						
 					</Subnodes>
 				</Node>
@@ -29,7 +30,7 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
 						
 					</Subnodes>
 				</Node>
@@ -39,7 +40,7 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
 						
 					</Subnodes>
 				</Node>
@@ -276,6 +277,18 @@
                 </Node>
                 
                 
+                <Node type="section">
+                    <Path>Classes/PRXSmartSpace.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PRXSmartSpace.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
                 
             </Subnodes>
             
@@ -319,9 +332,36 @@
             </Subnodes>
             
         </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>ProxibleSDK</Name>
+            <Path>Classes/ProxibleSDK.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/ProxibleSDK.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/ProxibleSDK.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/ProxibleSDK.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
 		
 		
-        <Node id="9" type="file" documentType="reference">
+        <Node id="10" type="file" documentType="reference">
             <Name>PRXLocationManagerDelegate</Name>
             <Path>Protocols/PRXLocationManagerDelegate.html</Path>
             
@@ -349,7 +389,7 @@
             
         </Node>
 		
-        <Node id="10" type="file" documentType="reference">
+        <Node id="11" type="file" documentType="reference">
             <Name>PRXSmartSpaceState</Name>
             <Path>Constants/PRXSmartSpaceState.html</Path>
             

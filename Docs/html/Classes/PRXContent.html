@@ -50,6 +50,10 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/initWithContent:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithContent:</option>
+	
+	<option value="//api/name/initWithTextContents:mediaContents:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTextContents:mediaContents:</option>
+	
 	<option value="//api/name/mediaContentItems">&nbsp;&nbsp;&nbsp;&nbsp;- mediaContentItems</option>
 	
 	<option value="//api/name/mediaContentKeys">&nbsp;&nbsp;&nbsp;&nbsp;- mediaContentKeys</option>
@@ -94,6 +98,10 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithContent:">initWithContent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTextContents:mediaContents:">initWithTextContents:mediaContents:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaContentItems">mediaContentItems</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaContentKeys">mediaContentKeys</a></span></li>
@@ -129,7 +137,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PRXContent.h</td>
+	<td class="specification-value">PRXContent.h<br />PRXContent.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -155,7 +163,7 @@ The PRXContent class represents the model of a local copy of content correspondi
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -191,6 +199,26 @@ The PRXContent class represents the model of a local copy of content correspondi
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/mediaContentItems">&ndash;&nbsp;mediaContentItems</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithContent:">&ndash;&nbsp;initWithContent:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTextContents:mediaContents:">&ndash;&nbsp;initWithTextContents:mediaContents:</a></code>
 	</span>
 	
 	
@@ -288,6 +316,113 @@ The PRXContent class represents the model of a local copy of content correspondi
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithContent:" title="initWithContent:"></a>
+	<h3 class="subsubtitle method-title">initWithContent:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a new PRXContent with a context represented by the corresponding core data object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithContent:(PRXMContent *)<em>content</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>content</em></dt>
+			<dd><p>The content data object represented by the core data model (PRXMContent)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a newly created PRXContent object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXContent__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTextContents:mediaContents:" title="initWithTextContents:mediaContents:"></a>
+	<h3 class="subsubtitle method-title">initWithTextContents:mediaContents:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a new PRXContent with a raw list of text contents and media contents</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithTextContents:(NSDictionary *)<em>textContants</em> mediaContents:(NSDictionary *)<em>mediaContents</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>textContants</em></dt>
+			<dd><p>The list of the text contents corresponding to the content data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mediaContents</em></dt>
+			<dd><p>The list of media contents corresponding to the content data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a newly created PRXContent object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXContent__Private.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/mediaContentItems" title="mediaContentItems"></a>
@@ -448,7 +583,7 @@ The PRXContent class represents the model of a local copy of content correspondi
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-05-13)</span><br />
+						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-05-14)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

@@ -360,6 +360,47 @@
             <NodeRef refid="1"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/initWithAddressID:streetLine1:streetLine2:cityName:stateAbbrev:zipCode:countryName:latitude:longitude:</TokenIdentifier>
+			<Abstract type="html">Creates a PRXAddress class with the given address details</Abstract>
+			<DeclaredIn>PRXAddress.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAddressID:(NSString *)addressID streetLine1:(NSString *)streetLine1 streetLine2:(NSString *)streetLine2 cityName:(NSString *)cityName stateAbbrev:(NSString *)stateAbbrev zipCode:(NSString *)zipCode countryName:(NSString *)countryName latitude:(NSNumber *)latitude longitude:(NSNumber *)longitude</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>addressID</Name>
+					<Abstract type="html">The ID of the address</Abstract>
+				</Parameter><Parameter>
+					<Name>streetLine1</Name>
+					<Abstract type="html">The street the address belongs too</Abstract>
+				</Parameter><Parameter>
+					<Name>streetLine2</Name>
+					<Abstract type="html">Extra information about the street</Abstract>
+				</Parameter><Parameter>
+					<Name>cityName</Name>
+					<Abstract type="html">The name of the city where the address physically is</Abstract>
+				</Parameter><Parameter>
+					<Name>stateAbbrev</Name>
+					<Abstract type="html">The state/region where the address physically is</Abstract>
+				</Parameter><Parameter>
+					<Name>zipCode</Name>
+					<Abstract type="html">ZipCode/Postal code corresponding to the address</Abstract>
+				</Parameter><Parameter>
+					<Name>countryName</Name>
+					<Abstract type="html">Country of the address</Abstract>
+				</Parameter><Parameter>
+					<Name>latitude</Name>
+					<Abstract type="html">GPS coordinates of the address (latitude</Abstract>
+				</Parameter><Parameter>
+					<Name>longitude</Name>
+					<Abstract type="html">GPS coordinates of the address (longitude</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created PRXAddress object with the given address data</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAddressID:streetLine1:streetLine2:cityName:stateAbbrev:zipCode:countryName:latitude:longitude:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

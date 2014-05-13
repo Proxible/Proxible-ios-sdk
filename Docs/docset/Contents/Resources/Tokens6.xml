@@ -447,6 +447,114 @@ be present in this set.</Abstract>
             <NodeRef refid="6"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/setMonitoringSerivce:</TokenIdentifier>
+			<Abstract type="html">Holds the service that monitors smartspaces</Abstract>
+			<DeclaredIn>PRXLocationManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXSmartSpaceLocationService *monitoringSerivce</Declaration>
+			
+			
+			<Anchor>//api/name/monitoringSerivce</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/monitoringSerivce</TokenIdentifier>
+			<Abstract type="html">Holds the service that monitors smartspaces</Abstract>
+			<DeclaredIn>PRXLocationManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXSmartSpaceLocationService *monitoringSerivce</Declaration>
+			
+			
+			<Anchor>//api/name/monitoringSerivce</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXLocationManager/monitoringSerivce</TokenIdentifier>
+			<Abstract type="html">Holds the service that monitors smartspaces</Abstract>
+			<DeclaredIn>PRXLocationManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXSmartSpaceLocationService *monitoringSerivce</Declaration>
+			
+			
+			<Anchor>//api/name/monitoringSerivce</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/setRangedSmartSpacesDict:</TokenIdentifier>
+			<Abstract type="html">Contains the dictionary of all smart spaces that are being ranged with the smartspace identifier as key and the smartspace object as the value</Abstract>
+			<DeclaredIn>PRXLocationManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *rangedSmartSpacesDict</Declaration>
+			
+			
+			<Anchor>//api/name/rangedSmartSpacesDict</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/rangedSmartSpacesDict</TokenIdentifier>
+			<Abstract type="html">Contains the dictionary of all smart spaces that are being ranged with the smartspace identifier as key and the smartspace object as the value</Abstract>
+			<DeclaredIn>PRXLocationManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *rangedSmartSpacesDict</Declaration>
+			
+			
+			<Anchor>//api/name/rangedSmartSpacesDict</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXLocationManager/rangedSmartSpacesDict</TokenIdentifier>
+			<Abstract type="html">Contains the dictionary of all smart spaces that are being ranged with the smartspace identifier as key and the smartspace object as the value</Abstract>
+			<DeclaredIn>PRXLocationManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *rangedSmartSpacesDict</Declaration>
+			
+			
+			<Anchor>//api/name/rangedSmartSpacesDict</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/setRangedBeacons:</TokenIdentifier>
+			<Abstract type="html">Contains the dictionary of all beacons that are being ranged with the beacon identifier as key and the beacon object as the value</Abstract>
+			<DeclaredIn>PRXLocationManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *rangedBeacons</Declaration>
+			
+			
+			<Anchor>//api/name/rangedBeacons</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/rangedBeacons</TokenIdentifier>
+			<Abstract type="html">Contains the dictionary of all beacons that are being ranged with the beacon identifier as key and the beacon object as the value</Abstract>
+			<DeclaredIn>PRXLocationManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *rangedBeacons</Declaration>
+			
+			
+			<Anchor>//api/name/rangedBeacons</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXLocationManager/rangedBeacons</TokenIdentifier>
+			<Abstract type="html">Contains the dictionary of all beacons that are being ranged with the beacon identifier as key and the beacon object as the value</Abstract>
+			<DeclaredIn>PRXLocationManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *rangedBeacons</Declaration>
+			
+			
+			<Anchor>//api/name/rangedBeacons</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

@@ -109,6 +109,150 @@
             <NodeRef refid="5"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/setMainQueueContext:</TokenIdentifier>
+			<Abstract type="html">The main context for handling core data for contents</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueContext</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/mainQueueContext</TokenIdentifier>
+			<Abstract type="html">The main context for handling core data for contents</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueContext</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContentManager/mainQueueContext</TokenIdentifier>
+			<Abstract type="html">The main context for handling core data for contents</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueContext</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/setSmartSpaceDataController:</TokenIdentifier>
+			<Abstract type="html">The smartspace manager to handle the smartspace related to the content</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXSmartSpaceManager *smartSpaceDataController</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceDataController</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/smartSpaceDataController</TokenIdentifier>
+			<Abstract type="html">The smartspace manager to handle the smartspace related to the content</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXSmartSpaceManager *smartSpaceDataController</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceDataController</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContentManager/smartSpaceDataController</TokenIdentifier>
+			<Abstract type="html">The smartspace manager to handle the smartspace related to the content</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXSmartSpaceManager *smartSpaceDataController</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceDataController</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/setApiClient:</TokenIdentifier>
+			<Abstract type="html">The api handler to interface with the proxible cloud for content related data</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXCloudAPI *apiClient</Declaration>
+			
+			
+			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/apiClient</TokenIdentifier>
+			<Abstract type="html">The api handler to interface with the proxible cloud for content related data</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXCloudAPI *apiClient</Declaration>
+			
+			
+			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContentManager/apiClient</TokenIdentifier>
+			<Abstract type="html">The api handler to interface with the proxible cloud for content related data</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXCloudAPI *apiClient</Declaration>
+			
+			
+			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/setImportOperationQueue:</TokenIdentifier>
+			<Abstract type="html">The queue for performing the content import operation</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSOperationQueue *importOperationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/importOperationQueue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/importOperationQueue</TokenIdentifier>
+			<Abstract type="html">The queue for performing the content import operation</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSOperationQueue *importOperationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/importOperationQueue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContentManager/importOperationQueue</TokenIdentifier>
+			<Abstract type="html">The queue for performing the content import operation</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSOperationQueue *importOperationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/importOperationQueue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/PRXLocationManagerDelegate.html">
+	<File path="Classes/ProxibleSDK.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/PRXLocationManagerDelegate</TokenIdentifier>
-			<Abstract type="html">PRXLocationManagerDelegate</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/ProxibleSDK</TokenIdentifier>
+			<Abstract type="html">ProxibleSDK</Abstract>
+			<DeclaredIn>ProxibleSDK.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
@@ -13,214 +13,75 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:didDetermineState:forSmartSpace:</TokenIdentifier>
-			<Abstract type="html">delegate method when the state of a smartspace is determined</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/ProxibleSDK/setApplicationID:apiKey:</TokenIdentifier>
+			<Abstract type="html">Initializes the SDK with the given company ID, application ID and apikey</Abstract>
+			<DeclaredIn>ProxibleSDK.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager didDetermineState:(PRXSmartSpaceState)state forSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Declaration>+ (void)setApplicationID:(NSString *)appID apiKey:(NSString *)apiKey</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager that determines the state</Abstract>
+					<Name>appID</Name>
+					<Abstract type="html">The ID of the app accessing the SDK</Abstract>
 				</Parameter><Parameter>
-					<Name>state</Name>
-					<Abstract type="html">The current determined state of the smartspace</Abstract>
-				</Parameter><Parameter>
-					<Name>space</Name>
-					<Abstract type="html">The smartspace for which the state is determined</Abstract>
+					<Name>apiKey</Name>
+					<Abstract type="html">The APIKey required to access the cloud via the SDK</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/locationManager:didDetermineState:forSmartSpace:</Anchor>
+			<Anchor>//api/name/setApplicationID:apiKey:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:didEnterSmartSpace:</TokenIdentifier>
-			<Abstract type="html">delegate method when the mobile device enters a monitored smartspace</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/ProxibleSDK/setOptions:</TokenIdentifier>
+			<Abstract type="html">Set various options for the SDK, currently the only option available is to enable/disable tracking</Abstract>
+			<DeclaredIn>ProxibleSDK.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager didEnterSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Declaration>+ (void)setOptions:(NSDictionary *)options</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager that detects the entry</Abstract>
-				</Parameter><Parameter>
-					<Name>space</Name>
-					<Abstract type="html">The smartspace that the mobile device enters</Abstract>
+					<Name>options</Name>
+					<Abstract type="html">The dictionary containing various options for the SDK</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/locationManager:didEnterSmartSpace:</Anchor>
+			<Anchor>//api/name/setOptions:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:didExitSmartSpace:</TokenIdentifier>
-			<Abstract type="html">delegate method when the mobile device exits a monitored smartspace</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/ProxibleSDK/trackingEnabled</TokenIdentifier>
+			<Abstract type="html">Returns if tracking is enabled or not</Abstract>
+			<DeclaredIn>ProxibleSDK.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager didExitSmartSpace:(PRXSmartSpace *)space</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager that detects the exit</Abstract>
-				</Parameter><Parameter>
-					<Name>space</Name>
-					<Abstract type="html">The smartspace that the mobile device exits</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (BOOL)trackingEnabled</Declaration>
 			
-			<Anchor>//api/name/locationManager:didExitSmartSpace:</Anchor>
+			<ReturnValue><Abstract type="html">YES- if tracking is enabled, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/trackingEnabled</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:monitoringDidFailForSmartSpace:withError:</TokenIdentifier>
-			<Abstract type="html">delegate method when the monitoring of smartspace fails</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/ProxibleSDK/applicationID</TokenIdentifier>
+			<Abstract type="html">Returns the ID of the application associated with the SDK</Abstract>
+			<DeclaredIn>ProxibleSDK.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager monitoringDidFailForSmartSpace:(PRXSmartSpace *)space withError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager for which the monitoring fails</Abstract>
-				</Parameter><Parameter>
-					<Name>space</Name>
-					<Abstract type="html">The smartspace that fails to be monitored</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">The error generated while monitoring the smartspace</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (NSString *)applicationID</Declaration>
 			
-			<Anchor>//api/name/locationManager:monitoringDidFailForSmartSpace:withError:</Anchor>
+			<ReturnValue><Abstract type="html">The ID of the application associated with the SDK</Abstract></ReturnValue>
+			<Anchor>//api/name/applicationID</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:didStartMonitoringForSmartSpace:</TokenIdentifier>
-			<Abstract type="html">delegate method when the monitoring of smartspace starts</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/ProxibleSDK/apiKey</TokenIdentifier>
+			<Abstract type="html">Returns the apiKey that is required to access the cloud via the SDK</Abstract>
+			<DeclaredIn>ProxibleSDK.h</DeclaredIn>
 			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager didStartMonitoringForSmartSpace:(PRXSmartSpace *)space</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager that starts the monitoring</Abstract>
-				</Parameter><Parameter>
-					<Name>space</Name>
-					<Abstract type="html">The smartspace for which monitoring is started</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>+ (NSString *)apiKey</Declaration>
 			
-			<Anchor>//api/name/locationManager:didStartMonitoringForSmartSpace:</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:didStopMonitoringForSmartSpace:</TokenIdentifier>
-			<Abstract type="html">delegate method when the monitoring of smartspace stops</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
-			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager didStopMonitoringForSmartSpace:(PRXSmartSpace *)space</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager that stops the monitoring</Abstract>
-				</Parameter><Parameter>
-					<Name>space</Name>
-					<Abstract type="html">The smartspace for which monitoring is stopped</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/locationManager:didStopMonitoringForSmartSpace:</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:didRangeBeacons:inSmartSpace:</TokenIdentifier>
-			<Abstract type="html">delegate method when beacons are ranged</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
-			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager didRangeBeacons:(NSArray *)beacons inSmartSpace:(PRXSmartSpace *)space</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager that ranges beacons</Abstract>
-				</Parameter><Parameter>
-					<Name>beacons</Name>
-					<Abstract type="html">The list of beacons that are being ranged</Abstract>
-				</Parameter><Parameter>
-					<Name>space</Name>
-					<Abstract type="html">The smartspace to which the beacons belongs to</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/locationManager:didRangeBeacons:inSmartSpace:</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:rangingBeaconsDidFailForSmartSpace:withError:</TokenIdentifier>
-			<Abstract type="html">delegate method when beacons ranging fails</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
-			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager rangingBeaconsDidFailForSmartSpace:(PRXSmartSpace *)space withError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager that ranges beacons</Abstract>
-				</Parameter><Parameter>
-					<Name>space</Name>
-					<Abstract type="html">The smartspace to which the beacons belongs to</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">The error that&apos;s generated while ranging</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/locationManager:rangingBeaconsDidFailForSmartSpace:withError:</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:didUpdateProximityServicesAvailibility:</TokenIdentifier>
-			<Abstract type="html">delegate method when availability of proximity service is updated</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
-			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager didUpdateProximityServicesAvailibility:(BOOL)available</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager for which the availability status is updated</Abstract>
-				</Parameter><Parameter>
-					<Name>available</Name>
-					<Abstract type="html">Indicates if Proximity services are available or not</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/locationManager:didUpdateProximityServicesAvailibility:</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PRXLocationManagerDelegate/locationManager:didFailWithError:</TokenIdentifier>
-			<Abstract type="html">delegate method when Location manager service fails</Abstract>
-			<DeclaredIn>PRXLocationManagerDelegate.h</DeclaredIn>
-			
-			<Declaration>- (void)locationManager:(PRXLocationManager *)manager didFailWithError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>manager</Name>
-					<Abstract type="html">The manager for which the service fails</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">The error that&apos;s generated</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/locationManager:didFailWithError:</Anchor>
+			<ReturnValue><Abstract type="html">The apiKey that is required to access the cloud via the SDK</Abstract></ReturnValue>
+			<Anchor>//api/name/apiKey</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

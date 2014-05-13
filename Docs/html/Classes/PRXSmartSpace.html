@@ -57,11 +57,17 @@
 	
 	<option value="//api/name/name">&nbsp;&nbsp;&nbsp;&nbsp;name</option>
 	
+	<option value="//api/name/region">&nbsp;&nbsp;&nbsp;&nbsp;region</option>
+	
 	<option value="//api/name/smartSpaceDescription">&nbsp;&nbsp;&nbsp;&nbsp;smartSpaceDescription</option>
 	
 	<option value="//api/name/smartSpaceID">&nbsp;&nbsp;&nbsp;&nbsp;smartSpaceID</option>
 	
 	<option value="//api/name/state">&nbsp;&nbsp;&nbsp;&nbsp;state</option>
+	
+	<option value="//api/name/syncedAt">&nbsp;&nbsp;&nbsp;&nbsp;syncedAt</option>
+	
+	<option value="//api/name/synched">&nbsp;&nbsp;&nbsp;&nbsp;synched</option>
 	
 	<option value="//api/name/timeSpentInSmartSpace">&nbsp;&nbsp;&nbsp;&nbsp;timeSpentInSmartSpace</option>
 	
@@ -70,6 +76,18 @@
 	
 	
 	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/stateForRegionState:">&nbsp;&nbsp;&nbsp;&nbsp;+ stateForRegionState:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</option>
+	
+	<option value="//api/name/initWithSmartSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSmartSpace:</option>
 	
 	
 	
@@ -90,6 +108,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SmartSpaceProperties">SmartSpaceProperties</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SmartSpaceState">SmartSpaceState</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
 	
 </ul></li>
 
@@ -117,11 +137,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/name">name</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/region">region</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/smartSpaceDescription">smartSpaceDescription</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/smartSpaceID">smartSpaceID</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/state">state</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/syncedAt">syncedAt</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/synched">synched</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeSpentInSmartSpace">timeSpentInSmartSpace</a></span></li>
 	
@@ -131,7 +157,21 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stateForRegionState:">stateForRegionState:</a></span></li>
+	
+</ul></li>
 
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:">initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSmartSpace:">initWithSmartSpace:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -161,7 +201,7 @@
 	<td class="specification-value">NSCopying</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PRXSmartSpace.h</td>
+	<td class="specification-value">PRXSmartSpace.h<br />PRXSmartSpace.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -172,6 +212,11 @@
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>PRXSmartSpace</p>
+
+<p>Discussion:
+This class handles and manages a local copy of smartspace data</p>
+
+<p>PRXSmartSpace</p>
 
 <p>Discussion:
 This class handles and manages a local copy of smartspace data</p>
@@ -279,6 +324,58 @@ This class handles and manages a local copy of smartspace data</p>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/lastTimeSpentInSmartSpace">&nbsp;&nbsp;lastTimeSpentInSmartSpace</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithSmartSpace:">&ndash;&nbsp;initWithSmartSpace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:">&ndash;&nbsp;initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stateForRegionState:">+&nbsp;stateForRegionState:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/synched">&nbsp;&nbsp;synched</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/syncedAt">&nbsp;&nbsp;syncedAt</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/region">&nbsp;&nbsp;region</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -620,6 +717,42 @@ This class handles and manages a local copy of smartspace data</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/region" title="region"></a>
+	<h3 class="subsubtitle method-title">region</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The core location beacon region data (UUID, major and minor) corresponding to the smart space</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) CLBeaconRegion *region</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXSmartSpace__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/smartSpaceDescription" title="smartSpaceDescription"></a>
 	<h3 class="subsubtitle method-title">smartSpaceDescription</h3>
 	
@@ -728,6 +861,78 @@ This class handles and manages a local copy of smartspace data</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/syncedAt" title="syncedAt"></a>
+	<h3 class="subsubtitle method-title">syncedAt</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The time when the smart space <a href="#//api/name/state">state</a> and properties were <a href="#//api/name/synched">synched</a> with the Proxible Cloud</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readwrite) NSDate *syncedAt</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXSmartSpace__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/synched" title="synched"></a>
+	<h3 class="subsubtitle method-title">synched</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates if the smart space <a href="#//api/name/state">state</a> and properties are synched with the Proxible Cloud</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readwrite) BOOL synched</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXSmartSpace__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/timeSpentInSmartSpace" title="timeSpentInSmartSpace"></a>
 	<h3 class="subsubtitle method-title">timeSpentInSmartSpace</h3>
 	
@@ -803,7 +1008,252 @@ This class handles and manages a local copy of smartspace data</p>
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/stateForRegionState:" title="stateForRegionState:"></a>
+	<h3 class="subsubtitle method-title">stateForRegionState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a <a href="../Constants/PRXSmartSpaceState.html">PRXSmartSpaceState</a> Object based on a given corelocation <a href="#//api/name/state">state</a> of a monitored <a href="#//api/name/region">region</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (PRXSmartSpaceState)stateForRegionState:(CLRegionState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>The corelocation <a href="#//api/name/region">region</a> <a href="#//api/name/state">state</a> based on which the object needs to be created</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Constants/PRXSmartSpaceState.html">PRXSmartSpaceState</a> object created based on the given corelocation <a href="#//api/name/state">state</a> of a monitored <a href="#//api/name/region">region</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXSmartSpace__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:" title="initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:"></a>
+	<h3 class="subsubtitle method-title">initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and Creates a smartspace object based on the given smartspace properties</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithID:(NSString *)<em>smarSpaceID</em> name:(NSString *)<em>name</em> description:(NSString *)<em>description</em> createdAt:(NSDate *)<em>createdAt</em> modifiedAt:(NSDate *)<em>modifiedAt</em> synchedAt:(NSDate *)<em>synchedAt</em> synched:(BOOL)<em>synched</em> address:(PRXAddress *)<em>address</em> beaconRegion:(CLBeaconRegion *)<em>region</em> state:(PRXSmartSpaceState)<em>state</em> enteredAt:(NSDate *)<em>enteredAt</em> exitedAt:(NSDate *)<em>exitedAt</em> timeSpent:(NSInteger)<em>timeSpent</em> lastEnteredAt:(NSDate *)<em>lastEnteredAt</em> lastExitedAt:(NSDate *)<em>lastExitedAt</em> lastTimeSpent:(NSInteger)<em>lastTimeSpent</em> totalVisits:(NSInteger)<em>visits</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>smarSpaceID</em></dt>
+			<dd><p>The ID for the smartspace from the Proxible Cloud</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The user friendly <a href="#//api/name/name">name</a> for the smart space</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>description</em></dt>
+			<dd><p>The description of the smartspace</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>createdAt</em></dt>
+			<dd><p>The time when the smartspace was created</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>modifiedAt</em></dt>
+			<dd><p>The time when the smartspace was updated/modified</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>synchedAt</em></dt>
+			<dd><p>The time when the smart space <a href="#//api/name/state">state</a> and properties were <a href="#//api/name/synched">synched</a> with the Proxible Cloud</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>synched</em></dt>
+			<dd><p>Flag that indicates if the smart space <a href="#//api/name/state">state</a> and properties are <a href="#//api/name/synched">synched</a> with the Proxible Cloud</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>address</em></dt>
+			<dd><p>The physical location / <a href="#//api/name/address">address</a> where the smartspace is located at</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>region</em></dt>
+			<dd><p>The beacon <a href="#//api/name/region">region</a> (Corelocation class) for which the smartspace belongs to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>The monitored <a href="#//api/name/state">state</a> of the mobile device in the smartspace</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enteredAt</em></dt>
+			<dd><p>The time when the mobile device currently entered the smartspace</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>exitedAt</em></dt>
+			<dd><p>The time when the mobile device currently exited from the smartspace</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>timeSpent</em></dt>
+			<dd><p>The time spent by the mobile device in the smartspace (between currently entered and currently exited)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lastEnteredAt</em></dt>
+			<dd><p>The time when the smartspace was entered the last time</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lastExitedAt</em></dt>
+			<dd><p>The time when the smartspace was exited the last time</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lastTimeSpent</em></dt>
+			<dd><p>The time spent by the mobile device during the last entry / exit</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>visits</em></dt>
+			<dd><p>The total number of times the smartspace was visited by the mobile device</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly created smartspace object based on the given smartspace properties</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXSmartSpace__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithSmartSpace:" title="initWithSmartSpace:"></a>
+	<h3 class="subsubtitle method-title">initWithSmartSpace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and Creates a smartspace object based on smartspace data stored in disk (coredata)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithSmartSpace:(PRXMSmartSpace *)<em>space</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>space</em></dt>
+			<dd><p>The corelocation object containing the smartspace data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly created smartspace object based on the coredata smartspace object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXSmartSpace__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
                     
@@ -818,7 +1268,7 @@ This class handles and manages a local copy of smartspace data</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-05-13)</span><br />
+						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-05-14)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

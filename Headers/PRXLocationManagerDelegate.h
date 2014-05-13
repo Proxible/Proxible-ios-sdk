@@ -23,8 +23,6 @@
 
 @optional
 
-
-
 /**
  * delegate method when the state of a smartspace is determined
  *

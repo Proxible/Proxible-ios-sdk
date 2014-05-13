@@ -41,6 +41,8 @@
 	
 	<option value="//api/name/accuracy">&nbsp;&nbsp;&nbsp;&nbsp;accuracy</option>
 	
+	<option value="//api/name/beacon">&nbsp;&nbsp;&nbsp;&nbsp;beacon</option>
+	
 	<option value="//api/name/firstDiscoveredAt">&nbsp;&nbsp;&nbsp;&nbsp;firstDiscoveredAt</option>
 	
 	<option value="//api/name/lastDiscoveredAt">&nbsp;&nbsp;&nbsp;&nbsp;lastDiscoveredAt</option>
@@ -64,7 +66,13 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/beaconIdentifier">&nbsp;&nbsp;&nbsp;&nbsp;- beaconIdentifier</option>
+	
+	<option value="//api/name/initWithProximityUUID:major:minor:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithProximityUUID:major:minor:</option>
+	
 	<option value="//api/name/proximityStringValue">&nbsp;&nbsp;&nbsp;&nbsp;- proximityStringValue</option>
+	
+	<option value="//api/name/updateBeaconProximity:accucary:rsssi:">&nbsp;&nbsp;&nbsp;&nbsp;- updateBeaconProximity:accucary:rsssi:</option>
 	
 	
 	
@@ -84,6 +92,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_BeaconProperties">BeaconProperties</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
 </ul></li>
 
 
@@ -93,6 +103,8 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accuracy">accuracy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beacon">beacon</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/firstDiscoveredAt">firstDiscoveredAt</a></span></li>
 	
@@ -118,7 +130,13 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beaconIdentifier">beaconIdentifier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithProximityUUID:major:minor:">initWithProximityUUID:major:minor:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/proximityStringValue">proximityStringValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateBeaconProximity:accucary:rsssi:">updateBeaconProximity:accucary:rsssi:</a></span></li>
 	
 </ul></li>
 
@@ -150,7 +168,7 @@
 	<td class="specification-value">NSCopying</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">PRXBeacon.h</td>
+	<td class="specification-value">PRXBeacon.h<br />PRXBeacon.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -163,7 +181,7 @@
 						<p>PRXBeacon</p>
 
 <p>Discussion:
-This class handles and manages a local copy of a beacon data</p>
+This class handles and manages a local copy of a <a href="#//api/name/beacon">beacon</a> data</p>
 					</div>
 					
 					
@@ -176,8 +194,8 @@ This class handles and manages a local copy of a beacon data</p>
 						
 						
 						<a title="BeaconProperties" name="task_BeaconProperties"></a>
-						
-<h3 class="subsubtitle task-title">BeaconProperties</h3>
+						<h3 class="subsubtitle task-title">BeaconProperties</h3>
+
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
@@ -242,6 +260,46 @@ This class handles and manages a local copy of a beacon data</p>
 </li>
 						</ul>
 						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithProximityUUID:major:minor:">&ndash;&nbsp;initWithProximityUUID:major:minor:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateBeaconProximity:accucary:rsssi:">&ndash;&nbsp;updateBeaconProximity:accucary:rsssi:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beaconIdentifier">&ndash;&nbsp;beaconIdentifier</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beacon">&nbsp;&nbsp;beacon</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
 					</div>
 					
 					
@@ -259,7 +317,7 @@ This class handles and manages a local copy of a beacon data</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The accuracy data calculated by the corelocation of the beacon, usually represents the approximate distance between the mobile device and beacon in terms of [m]</p>
+		<p>The accuracy data calculated by the corelocation of the <a href="#//api/name/beacon">beacon</a>, usually represents the approximate distance between the mobile device and <a href="#//api/name/beacon">beacon</a> in terms of [m]</p>
 	</div>		
 	
     
@@ -289,13 +347,49 @@ This class handles and manages a local copy of a beacon data</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/beacon" title="beacon"></a>
+	<h3 class="subsubtitle method-title">beacon</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The corelocation beacon object corresponding to the current beacon</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) CLBeacon *beacon</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXBeacon__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/firstDiscoveredAt" title="firstDiscoveredAt"></a>
 	<h3 class="subsubtitle method-title">firstDiscoveredAt</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The time when the beacon was first discovered by the device</p>
+		<p>The time when the <a href="#//api/name/beacon">beacon</a> was first discovered by the device</p>
 	</div>		
 	
     
@@ -331,7 +425,7 @@ This class handles and manages a local copy of a beacon data</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The time when the last advertisement packet was received from the beacon</p>
+		<p>The time when the last advertisement packet was received from the <a href="#//api/name/beacon">beacon</a></p>
 	</div>		
 	
     
@@ -367,7 +461,7 @@ This class handles and manages a local copy of a beacon data</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The time when the beacon region/smartspace was last ranged</p>
+		<p>The time when the <a href="#//api/name/beacon">beacon</a> region/smartspace was last ranged</p>
 	</div>		
 	
     
@@ -403,7 +497,7 @@ This class handles and manages a local copy of a beacon data</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The 2 byte Major value of the beacon region</p>
+		<p>The 2 byte Major value of the <a href="#//api/name/beacon">beacon</a> region</p>
 	</div>		
 	
     
@@ -439,7 +533,7 @@ This class handles and manages a local copy of a beacon data</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The 2 byte Minor value of the beacon region</p>
+		<p>The 2 byte Minor value of the <a href="#//api/name/beacon">beacon</a> region</p>
 	</div>		
 	
     
@@ -475,7 +569,7 @@ This class handles and manages a local copy of a beacon data</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The proxmity of the beacon from the mobile device, namely: Immediate, Nearby, Far, Unknown</p>
+		<p>The proxmity of the <a href="#//api/name/beacon">beacon</a> from the mobile device, namely: Immediate, Nearby, Far, Unknown</p>
 	</div>		
 	
     
@@ -511,7 +605,7 @@ This class handles and manages a local copy of a beacon data</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The 16 byte UUID of the beacon region</p>
+		<p>The 16 byte UUID of the <a href="#//api/name/beacon">beacon</a> region</p>
 	</div>		
 	
     
@@ -547,7 +641,7 @@ This class handles and manages a local copy of a beacon data</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The RSSI value of the signal received by the mobile device from the beacon</p>
+		<p>The RSSI value of the signal received by the mobile device from the <a href="#//api/name/beacon">beacon</a></p>
 	</div>		
 	
     
@@ -587,13 +681,115 @@ This class handles and manages a local copy of a beacon data</p>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/beaconIdentifier" title="beaconIdentifier"></a>
+	<h3 class="subsubtitle method-title">beaconIdentifier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/beacon">beacon</a> identifier string created from the <a href="#//api/name/proximity">proximity</a> UUID, <a href="#//api/name/major">major</a> and <a href="#//api/name/minor">minor</a> parameters of the <a href="#//api/name/beacon">beacon</a> region</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)beaconIdentifier</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>String representation of RegionID</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXBeacon__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithProximityUUID:major:minor:" title="initWithProximityUUID:major:minor:"></a>
+	<h3 class="subsubtitle method-title">initWithProximityUUID:major:minor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and creates a <a href="#//api/name/beacon">beacon</a> object based on UUID, <a href="#//api/name/major">major</a> and <a href="#//api/name/minor">minor</a> data of the <a href="#//api/name/beacon">beacon</a> region</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithProximityUUID:(NSUUID *)<em>proximityUUID</em> major:(CLBeaconMajorValue)<em>major</em> minor:(CLBeaconMinorValue)<em>minor</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>proximityUUID</em></dt>
+			<dd><p>The 16 byte UUID of the <a href="#//api/name/beacon">beacon</a> region</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>major</em></dt>
+			<dd><p>The 2 byte Major value of the <a href="#//api/name/beacon">beacon</a> region</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minor</em></dt>
+			<dd><p>The 2 byte Minor value of the <a href="#//api/name/beacon">beacon</a> region</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly created <a href="#//api/name/beacon">beacon</a> object based on UUID, <a href="#//api/name/major">major</a> and <a href="#//api/name/minor">minor</a> data of the <a href="#//api/name/beacon">beacon</a> region</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXBeacon__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/proximityStringValue" title="proximityStringValue"></a>
 	<h3 class="subsubtitle method-title">proximityStringValue</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The string value corresponding to the corelocation <a href="#//api/name/proximity">proximity</a> of the beacon, namely: &ldquo;Immediate&rdquo;, &ldquo;Near&rdquo;, &ldquo;Far&rdquo;, &ldquo;Unknown&rdquo;</p>
+		<p>The string value corresponding to the corelocation <a href="#//api/name/proximity">proximity</a> of the <a href="#//api/name/beacon">beacon</a>, namely: &ldquo;Immediate&rdquo;, &ldquo;Near&rdquo;, &ldquo;Far&rdquo;, &ldquo;Unknown&rdquo;</p>
 	</div>		
 	
     
@@ -606,7 +802,7 @@ This class handles and manages a local copy of a beacon data</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The string value corresponding to the corelocation <a href="#//api/name/proximity">proximity</a> of the beacon</p>
+		<p>The string value corresponding to the corelocation <a href="#//api/name/proximity">proximity</a> of the <a href="#//api/name/beacon">beacon</a></p>
 	</div>
 	
 	
@@ -627,6 +823,67 @@ This class handles and manages a local copy of a beacon data</p>
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/updateBeaconProximity:accucary:rsssi:" title="updateBeaconProximity:accucary:rsssi:"></a>
+	<h3 class="subsubtitle method-title">updateBeaconProximity:accucary:rsssi:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates the current <a href="#//api/name/beacon">beacon</a> object with the <a href="#//api/name/proximity">proximity</a> details obtained from the corelocation data</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)updateBeaconProximity:(CLProximity)<em>proximity</em> accucary:(CLLocationAccuracy)<em>accuracy</em> rsssi:(NSInteger)<em>rssi</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>proximity</em></dt>
+			<dd><p>The proxmity of the <a href="#//api/name/beacon">beacon</a> from the mobile device, namely: Immediate, Nearby, Far, Unknown</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accuracy</em></dt>
+			<dd><p>The <a href="#//api/name/accuracy">accuracy</a> data calculated by the corelocation of the <a href="#//api/name/beacon">beacon</a>, usually represents the approximate distance between the mobile device and <a href="#//api/name/beacon">beacon</a> in terms of [m]</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rssi</em></dt>
+			<dd><p>The RSSI value of the signal received by the mobile device from the <a href="#//api/name/beacon">beacon</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly created <a href="#//api/name/beacon">beacon</a> object based on UUID, <a href="#//api/name/major">major</a> and <a href="#//api/name/minor">minor</a> data of the <a href="#//api/name/beacon">beacon</a> region</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXBeacon__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -642,7 +899,7 @@ This class handles and manages a local copy of a beacon data</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-05-13)</span><br />
+						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-05-14)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
