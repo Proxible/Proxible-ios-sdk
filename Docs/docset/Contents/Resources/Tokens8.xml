@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PRXSmartSpaceManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PRXSmartSpaceManager</TokenIdentifier>
+			<Abstract type="html">PRXSmartSpaceManager</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXSmartSpaceManager/sharedSmartSpaceManager</TokenIdentifier>
+			<Abstract type="html">Returns a singleton object of PRXSmartSpaceManager</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>+ (PRXSmartSpaceManager *)sharedSmartSpaceManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">shared singleton object of PRXSmartSpaceManager</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedSmartSpaceManager</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/setCompletionQueue:</TokenIdentifier>
+			<Abstract type="html">The dispatch queue for completionBlock. If NIL (default), the main queue is used.</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) dispatch_queue_t completionQueue</Declaration>
+			
+			
+			<Anchor>//api/name/completionQueue</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/completionQueue</TokenIdentifier>
+			<Abstract type="html">The dispatch queue for completionBlock. If NIL (default), the main queue is used.</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) dispatch_queue_t completionQueue</Declaration>
+			
+			
+			<Anchor>//api/name/completionQueue</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpaceManager/completionQueue</TokenIdentifier>
+			<Abstract type="html">The dispatch queue for completionBlock. If NIL (default), the main queue is used.</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) dispatch_queue_t completionQueue</Declaration>
+			
+			
+			<Anchor>//api/name/completionQueue</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/allSmartSpaces</TokenIdentifier>
+			<Abstract type="html">Fetches immutable copies of all the smartspaces stored locally on the disk</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)allSmartSpaces</Declaration>
+			
+			<ReturnValue><Abstract type="html">a list of all available smart spaces in the disk</Abstract></ReturnValue>
+			<Anchor>//api/name/allSmartSpaces</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/getAllSmartSpacesWithCompletion:</TokenIdentifier>
+			<Abstract type="html">Downloads and synchronizes all the the smartspaces from the cloud</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>- (void)getAllSmartSpacesWithCompletion:(void ( ^ ) ( NSArray *smartSpaces , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion block to be executed after the fetching is done</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getAllSmartSpacesWithCompletion:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpaceWithID:</TokenIdentifier>
+			<Abstract type="html">Fetches the smart space from the disk (coredata) for a given smartSpaceID from the main context</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.m</DeclaredIn>
+			
+			<Declaration>- (PRXMSmartSpace *)smartSpaceWithID:(NSString *)smartSpaceID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>smartSpaceID</Name>
+					<Abstract type="html">The ID for which a smart space object is fetched</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The smart space corresponding to the given smartSpaceID</Abstract></ReturnValue>
+			<Anchor>//api/name/smartSpaceWithID:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpaceWithID:inContext:</TokenIdentifier>
+			<Abstract type="html">Fetches the smart space from the disk (coredata) for a given smartSpaceID from the given context</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.m</DeclaredIn>
+			
+			<Declaration>- (PRXMSmartSpace *)smartSpaceWithID:(NSString *)smartSpaceID inContext:(NSManagedObjectContext *)context</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>smartSpaceID</Name>
+					<Abstract type="html">The ID for which a smart space object is fetched</Abstract>
+				</Parameter><Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The context from which the smart space is fetched</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The smart space corresponding to the given smartSpaceID</Abstract></ReturnValue>
+			<Anchor>//api/name/smartSpaceWithID:inContext:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/setMainQueueContext:</TokenIdentifier>
+			<Abstract type="html">The main context for handling core data for Smartspaces</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueContext</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/mainQueueContext</TokenIdentifier>
+			<Abstract type="html">The main context for handling core data for Smartspaces</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueContext</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpaceManager/mainQueueContext</TokenIdentifier>
+			<Abstract type="html">The main context for handling core data for Smartspaces</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueContext</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/setApiClient:</TokenIdentifier>
+			<Abstract type="html">The api handler to interface with the proxible cloud for Smartspace related data</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXCloudAPI *apiClient</Declaration>
+			
+			
+			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/apiClient</TokenIdentifier>
+			<Abstract type="html">The api handler to interface with the proxible cloud for Smartspace related data</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXCloudAPI *apiClient</Declaration>
+			
+			
+			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpaceManager/apiClient</TokenIdentifier>
+			<Abstract type="html">The api handler to interface with the proxible cloud for Smartspace related data</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXCloudAPI *apiClient</Declaration>
+			
+			
+			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

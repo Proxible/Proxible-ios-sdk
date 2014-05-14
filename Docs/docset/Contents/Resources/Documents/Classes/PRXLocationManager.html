@@ -1,0 +1,1639 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PRXLocationManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ProxibleSDK </a></h1>
+				<a id="developerHome" href="../index.html">Proxible</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PRXLocationManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/isMonitoring">&nbsp;&nbsp;&nbsp;&nbsp;isMonitoring</option>
+	
+	<option value="//api/name/isRanging">&nbsp;&nbsp;&nbsp;&nbsp;isRanging</option>
+	
+	<option value="//api/name/monitoredSmartSpaces">&nbsp;&nbsp;&nbsp;&nbsp;monitoredSmartSpaces</option>
+	
+	<option value="//api/name/monitoringSerivce">&nbsp;&nbsp;&nbsp;&nbsp;monitoringSerivce</option>
+	
+	<option value="//api/name/rangedBeacons">&nbsp;&nbsp;&nbsp;&nbsp;rangedBeacons</option>
+	
+	<option value="//api/name/rangedSmartSpaces">&nbsp;&nbsp;&nbsp;&nbsp;rangedSmartSpaces</option>
+	
+	<option value="//api/name/rangedSmartSpacesDict">&nbsp;&nbsp;&nbsp;&nbsp;rangedSmartSpacesDict</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/authorizationStatus">&nbsp;&nbsp;&nbsp;&nbsp;+ authorizationStatus</option>
+	
+	<option value="//api/name/isBeaconRangingAvailable">&nbsp;&nbsp;&nbsp;&nbsp;+ isBeaconRangingAvailable</option>
+	
+	<option value="//api/name/isSmartSpaceMonitoringAvailable">&nbsp;&nbsp;&nbsp;&nbsp;+ isSmartSpaceMonitoringAvailable</option>
+	
+	<option value="//api/name/locationServicesEnabled">&nbsp;&nbsp;&nbsp;&nbsp;+ locationServicesEnabled</option>
+	
+	<option value="//api/name/proximityServicesEnabled">&nbsp;&nbsp;&nbsp;&nbsp;+ proximityServicesEnabled</option>
+	
+	<option value="//api/name/setSharedManager:">&nbsp;&nbsp;&nbsp;&nbsp;+ setSharedManager:</option>
+	
+	<option value="//api/name/sharedManager">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedManager</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithDelegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDelegate:</option>
+	
+	<option value="//api/name/isMonitoringSmartSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- isMonitoringSmartSpace:</option>
+	
+	<option value="//api/name/isRangingSmartSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- isRangingSmartSpace:</option>
+	
+	<option value="//api/name/requestStateForSmartSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- requestStateForSmartSpace:</option>
+	
+	<option value="//api/name/startMonitoringForSmartSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- startMonitoringForSmartSpace:</option>
+	
+	<option value="//api/name/startRangingBeaconsInSmartSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- startRangingBeaconsInSmartSpace:</option>
+	
+	<option value="//api/name/stopMonitoringAllSmartSpaces">&nbsp;&nbsp;&nbsp;&nbsp;- stopMonitoringAllSmartSpaces</option>
+	
+	<option value="//api/name/stopMonitoringForSmartSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- stopMonitoringForSmartSpace:</option>
+	
+	<option value="//api/name/stopRangingBeaconsInAllSmartSpaces">&nbsp;&nbsp;&nbsp;&nbsp;- stopRangingBeaconsInAllSmartSpaces</option>
+	
+	<option value="//api/name/stopRangingBeaconsInSmartSpace:">&nbsp;&nbsp;&nbsp;&nbsp;- stopRangingBeaconsInSmartSpace:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_LocationServices">LocationServices</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SharedManager">SharedManager</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SmartspaceMonitoring">SmartspaceMonitoring</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_SmartspaceRanging">SmartspaceRanging</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Extension Methods">Extension Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMonitoring">isMonitoring</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isRanging">isRanging</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/monitoredSmartSpaces">monitoredSmartSpaces</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/monitoringSerivce">monitoringSerivce</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rangedBeacons">rangedBeacons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rangedSmartSpaces">rangedSmartSpaces</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rangedSmartSpacesDict">rangedSmartSpacesDict</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/authorizationStatus">authorizationStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isBeaconRangingAvailable">isBeaconRangingAvailable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isSmartSpaceMonitoringAvailable">isSmartSpaceMonitoringAvailable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationServicesEnabled">locationServicesEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/proximityServicesEnabled">proximityServicesEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSharedManager:">setSharedManager:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedManager">sharedManager</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDelegate:">initWithDelegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMonitoringSmartSpace:">isMonitoringSmartSpace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isRangingSmartSpace:">isRangingSmartSpace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestStateForSmartSpace:">requestStateForSmartSpace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startMonitoringForSmartSpace:">startMonitoringForSmartSpace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRangingBeaconsInSmartSpace:">startRangingBeaconsInSmartSpace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopMonitoringAllSmartSpaces">stopMonitoringAllSmartSpaces</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopMonitoringForSmartSpace:">stopMonitoringForSmartSpace:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopRangingBeaconsInAllSmartSpaces">stopRangingBeaconsInAllSmartSpaces</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopRangingBeaconsInSmartSpace:">stopRangingBeaconsInSmartSpace:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PRXLocationManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PRXLocationManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PRXLocationManager.h<br />PRXLocationManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>PRXLocationManager</p>
+
+<p>Discussion:
+The PRXLocationManager object is your entry point to location services.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="LocationServices" name="task_LocationServices"></a>
+						<h3 class="subsubtitle task-title">LocationServices</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/authorizationStatus">+&nbsp;authorizationStatus</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isSmartSpaceMonitoringAvailable">+&nbsp;isSmartSpaceMonitoringAvailable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isBeaconRangingAvailable">+&nbsp;isBeaconRangingAvailable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locationServicesEnabled">+&nbsp;locationServicesEnabled</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/proximityServicesEnabled">+&nbsp;proximityServicesEnabled</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="SharedManager" name="task_SharedManager"></a>
+						<h3 class="subsubtitle task-title">SharedManager</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedManager">+&nbsp;sharedManager</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSharedManager:">+&nbsp;setSharedManager:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/monitoredSmartSpaces">&nbsp;&nbsp;monitoredSmartSpaces</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rangedSmartSpaces">&nbsp;&nbsp;rangedSmartSpaces</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isMonitoring">&nbsp;&nbsp;isMonitoring</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isRanging">&nbsp;&nbsp;isRanging</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDelegate:">&ndash;&nbsp;initWithDelegate:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="SmartspaceMonitoring" name="task_SmartspaceMonitoring"></a>
+						<h3 class="subsubtitle task-title">SmartspaceMonitoring</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startMonitoringForSmartSpace:">&ndash;&nbsp;startMonitoringForSmartSpace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopMonitoringForSmartSpace:">&ndash;&nbsp;stopMonitoringForSmartSpace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopMonitoringAllSmartSpaces">&ndash;&nbsp;stopMonitoringAllSmartSpaces</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestStateForSmartSpace:">&ndash;&nbsp;requestStateForSmartSpace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isMonitoringSmartSpace:">&ndash;&nbsp;isMonitoringSmartSpace:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="SmartspaceRanging" name="task_SmartspaceRanging"></a>
+						<h3 class="subsubtitle task-title">SmartspaceRanging</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startRangingBeaconsInSmartSpace:">&ndash;&nbsp;startRangingBeaconsInSmartSpace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopRangingBeaconsInSmartSpace:">&ndash;&nbsp;stopRangingBeaconsInSmartSpace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopRangingBeaconsInAllSmartSpaces">&ndash;&nbsp;stopRangingBeaconsInAllSmartSpaces</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isRangingSmartSpace:">&ndash;&nbsp;isRangingSmartSpace:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h3 class="subsubtitle task-title">Extension Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/monitoringSerivce">&nbsp;&nbsp;monitoringSerivce</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rangedSmartSpacesDict">&nbsp;&nbsp;rangedSmartSpacesDict</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rangedBeacons">&nbsp;&nbsp;rangedBeacons</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The PRXLocationManager&rsquo;s delegate object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;PRXLocationManagerDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isMonitoring" title="isMonitoring"></a>
+	<h3 class="subsubtitle method-title">isMonitoring</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Boolean that indicates whether monitoring is enabled</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL isMonitoring</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isRanging" title="isRanging"></a>
+	<h3 class="subsubtitle method-title">isRanging</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Boolean that indicates whether ranging is enabled</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL isRanging</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/monitoredSmartSpaces" title="monitoredSmartSpaces"></a>
+	<h3 class="subsubtitle method-title">monitoredSmartSpaces</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieve a set of objects for the smart spaces that are currently being monitored.  If any location manager
+has been instructed to monitor a smart space, during this or previous launches of your application, it will
+be present in this set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSSet *monitoredSmartSpaces</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/monitoringSerivce" title="monitoringSerivce"></a>
+	<h3 class="subsubtitle method-title">monitoringSerivce</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Holds the service that monitors smartspaces</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) PRXSmartSpaceLocationService *monitoringSerivce</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rangedBeacons" title="rangedBeacons"></a>
+	<h3 class="subsubtitle method-title">rangedBeacons</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Contains the dictionary of all beacons that are being ranged with the beacon identifier as key and the beacon object as the value</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableDictionary *rangedBeacons</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rangedSmartSpaces" title="rangedSmartSpaces"></a>
+	<h3 class="subsubtitle method-title">rangedSmartSpaces</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieve a set of objects representing the smart spaces for which this location manager is actively providing ranging.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSSet *rangedSmartSpaces</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rangedSmartSpacesDict" title="rangedSmartSpacesDict"></a>
+	<h3 class="subsubtitle method-title">rangedSmartSpacesDict</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Contains the dictionary of all smart spaces that are being ranged with the smartspace identifier as key and the smartspace object as the value</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableDictionary *rangedSmartSpacesDict</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/authorizationStatus" title="authorizationStatus"></a>
+	<h3 class="subsubtitle method-title">authorizationStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the application’s authorization status for using location services.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CLAuthorizationStatus)authorizationStatus</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A value indicating whether the application is authorized to use location services.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isBeaconRangingAvailable" title="isBeaconRangingAvailable"></a>
+	<h3 class="subsubtitle method-title">isBeaconRangingAvailable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a Boolean indicating whether the device supports ranging of Bluetooth beacons.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isBeaconRangingAvailable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the device supports ranging or NO if it does not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isSmartSpaceMonitoringAvailable" title="isSmartSpaceMonitoringAvailable"></a>
+	<h3 class="subsubtitle method-title">isSmartSpaceMonitoringAvailable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a Boolean indicating whether the device supports beacon region monitoring.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isSmartSpaceMonitoringAvailable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the device supports beacon region monitoring or NO if it does not.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The availability of beacon region monitoring support is dependent on the hardware present on the device and whether the user has location services enabled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/locationServicesEnabled" title="locationServicesEnabled"></a>
+	<h3 class="subsubtitle method-title">locationServicesEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a Boolean value indicating whether location services are enabled on the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)locationServicesEnabled</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if proximity services are enabled or NO if they are not.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The user can enable or disable location services from the Settings application by toggling the Location Services switch in General.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/proximityServicesEnabled" title="proximityServicesEnabled"></a>
+	<h3 class="subsubtitle method-title">proximityServicesEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a Boolean value indicating whether proximity services are enabled on the device.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)proximityServicesEnabled</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if proximity services are enabled or NO if they are not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSharedManager:" title="setSharedManager:"></a>
+	<h3 class="subsubtitle method-title">setSharedManager:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the shared Manager</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setSharedManager:(PRXLocationManager *)<em>manager</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>manager</em></dt>
+			<dd><p>A LocationManager to set as the shared manager</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedManager" title="sharedManager"></a>
+	<h3 class="subsubtitle method-title">sharedManager</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shared Manager</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (PRXLocationManager *)sharedManager</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The Shared Location Manager</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDelegate:" title="initWithDelegate:"></a>
+	<h3 class="subsubtitle method-title">initWithDelegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns an PRXLocationManager object with the specified object as it&rsquo;s <a href="#//api/name/delegate">delegate</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithDelegate:(id&lt;PRXLocationManagerDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>A <a href="#//api/name/delegate">delegate</a> object that wil respond to location manager updates</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new PRXLocationManager object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isMonitoringSmartSpace:" title="isMonitoringSmartSpace:"></a>
+	<h3 class="subsubtitle method-title">isMonitoringSmartSpace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if the specified Smart Space is currently being monitored</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isMonitoringSmartSpace:(PRXSmartSpace *)<em>space</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>space</em></dt>
+			<dd><p>The Smart Space to check if being monitored</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>BOOL returns Yes if the Smart Space is currently being monitored No if it is not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isRangingSmartSpace:" title="isRangingSmartSpace:"></a>
+	<h3 class="subsubtitle method-title">isRangingSmartSpace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a boolean if the specified Smart Space is currently being ranged</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isRangingSmartSpace:(PRXSmartSpace *)<em>space</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>space</em></dt>
+			<dd><p>The Smart Space to check if being ranged</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns Yes if the Smart Space is being ranged. No if it is not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestStateForSmartSpace:" title="requestStateForSmartSpace:"></a>
+	<h3 class="subsubtitle method-title">requestStateForSmartSpace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the state of a Smart Space asynchronously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)requestStateForSmartSpace:(PRXSmartSpace *)<em>space</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>space</em></dt>
+			<dd><p>The Smart Space whose state you want to know.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startMonitoringForSmartSpace:" title="startMonitoringForSmartSpace:"></a>
+	<h3 class="subsubtitle method-title">startMonitoringForSmartSpace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts monitoring the specified Smart Space.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startMonitoringForSmartSpace:(PRXSmartSpace *)<em>space</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>space</em></dt>
+			<dd><p>The Smart Space object that defines the boundary to monitor. This parameter must not be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You must call this method once for each Smart Space you want to monitor. If an existing Smart Space with the same identifier is already
+being monitored by the application, the old Smart Space is replaced by the new one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startRangingBeaconsInSmartSpace:" title="startRangingBeaconsInSmartSpace:"></a>
+	<h3 class="subsubtitle method-title">startRangingBeaconsInSmartSpace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts the delivery of notifications for beacons in the specified Smart Space.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startRangingBeaconsInSmartSpace:(PRXSmartSpace *)<em>space</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>space</em></dt>
+			<dd><p>The Smart Space object that defines the identifying information for the targeted beacons. The number of beacons represented by this Smart Space object depends on which identifier values you use to initialize it. Beacons must match all of the identifiers you specify.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopMonitoringAllSmartSpaces" title="stopMonitoringAllSmartSpaces"></a>
+	<h3 class="subsubtitle method-title">stopMonitoringAllSmartSpaces</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop Monitoring all Smart Spaces curently being monitored by the location manager.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopMonitoringAllSmartSpaces</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopMonitoringForSmartSpace:" title="stopMonitoringForSmartSpace:"></a>
+	<h3 class="subsubtitle method-title">stopMonitoringForSmartSpace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop monitoring the specified Smart Space.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopMonitoringForSmartSpace:(PRXSmartSpace *)<em>space</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>space</em></dt>
+			<dd><p>The Smart Space object currently being monitored. This parameter must not be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the specified smart space object is not currently being monitored, this method has no effect.
+@Discussion this</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopRangingBeaconsInAllSmartSpaces" title="stopRangingBeaconsInAllSmartSpaces"></a>
+	<h3 class="subsubtitle method-title">stopRangingBeaconsInAllSmartSpaces</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops the delivery of notifications for all Smart Spaces currently being ranged by the location manager.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopRangingBeaconsInAllSmartSpaces</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopRangingBeaconsInSmartSpace:" title="stopRangingBeaconsInSmartSpace:"></a>
+	<h3 class="subsubtitle method-title">stopRangingBeaconsInSmartSpace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops the delivery of notifications for the specified Smart Space.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopRangingBeaconsInSmartSpace:(PRXSmartSpace *)<em>space</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>space</em></dt>
+			<dd><p>The Smart Space that identifies the beacons.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXLocationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-05-14)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

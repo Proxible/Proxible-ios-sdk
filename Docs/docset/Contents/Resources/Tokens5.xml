@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PRXContentManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PRXContentManager</TokenIdentifier>
+			<Abstract type="html">PRXContentManager</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXContentManager/sharedContentManager</TokenIdentifier>
+			<Abstract type="html">Returns a singleton object of PRXContentManager</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>+ (PRXContentManager *)sharedContentManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">shared singleton object of PRXContentManager</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedContentManager</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/setCompletionQueue:</TokenIdentifier>
+			<Abstract type="html">The dispatch queue for completionBlock. If NIL (default), the main queue is used.</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) dispatch_queue_t completionQueue</Declaration>
+			
+			
+			<Anchor>//api/name/completionQueue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/completionQueue</TokenIdentifier>
+			<Abstract type="html">The dispatch queue for completionBlock. If NIL (default), the main queue is used.</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) dispatch_queue_t completionQueue</Declaration>
+			
+			
+			<Anchor>//api/name/completionQueue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContentManager/completionQueue</TokenIdentifier>
+			<Abstract type="html">The dispatch queue for completionBlock. If NIL (default), the main queue is used.</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) dispatch_queue_t completionQueue</Declaration>
+			
+			
+			<Anchor>//api/name/completionQueue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/allContent</TokenIdentifier>
+			<Abstract type="html">Fetches immutable copies of all the contents stored locally on the disk</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)allContent</Declaration>
+			
+			<ReturnValue><Abstract type="html">a list of all available contents in the disk</Abstract></ReturnValue>
+			<Anchor>//api/name/allContent</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/contentForSmartSpace:</TokenIdentifier>
+			<Abstract type="html">Retrieves the content for a given smartspaces from the disk</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>- (PRXContent *)contentForSmartSpace:(PRXSmartSpace *)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The smartspace for which the content needs to be retrieved</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/contentForSmartSpace:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/getContentForSmartSpace:completion:</TokenIdentifier>
+			<Abstract type="html">Downloads and updates the contents for a given smartspaces from the cloud</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>- (void)getContentForSmartSpace:(PRXSmartSpace *)space completion:(void ( ^ ) ( PRXContent *content , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The smartspace for which the content needs to be downloaded</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion block to be executed after the downloading is done</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentForSmartSpace:completion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/setMainQueueContext:</TokenIdentifier>
+			<Abstract type="html">The main context for handling core data for contents</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueContext</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/mainQueueContext</TokenIdentifier>
+			<Abstract type="html">The main context for handling core data for contents</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueContext</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContentManager/mainQueueContext</TokenIdentifier>
+			<Abstract type="html">The main context for handling core data for contents</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSManagedObjectContext *mainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/mainQueueContext</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/setSmartSpaceDataController:</TokenIdentifier>
+			<Abstract type="html">The smartspace manager to handle the smartspace related to the content</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXSmartSpaceManager *smartSpaceDataController</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceDataController</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/smartSpaceDataController</TokenIdentifier>
+			<Abstract type="html">The smartspace manager to handle the smartspace related to the content</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXSmartSpaceManager *smartSpaceDataController</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceDataController</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContentManager/smartSpaceDataController</TokenIdentifier>
+			<Abstract type="html">The smartspace manager to handle the smartspace related to the content</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXSmartSpaceManager *smartSpaceDataController</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceDataController</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/setApiClient:</TokenIdentifier>
+			<Abstract type="html">The api handler to interface with the proxible cloud for content related data</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXCloudAPI *apiClient</Declaration>
+			
+			
+			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/apiClient</TokenIdentifier>
+			<Abstract type="html">The api handler to interface with the proxible cloud for content related data</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXCloudAPI *apiClient</Declaration>
+			
+			
+			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContentManager/apiClient</TokenIdentifier>
+			<Abstract type="html">The api handler to interface with the proxible cloud for content related data</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXCloudAPI *apiClient</Declaration>
+			
+			
+			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/setImportOperationQueue:</TokenIdentifier>
+			<Abstract type="html">The queue for performing the content import operation</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSOperationQueue *importOperationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/importOperationQueue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/importOperationQueue</TokenIdentifier>
+			<Abstract type="html">The queue for performing the content import operation</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSOperationQueue *importOperationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/importOperationQueue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContentManager/importOperationQueue</TokenIdentifier>
+			<Abstract type="html">The queue for performing the content import operation</Abstract>
+			<DeclaredIn>PRXContentManager__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSOperationQueue *importOperationQueue</Declaration>
+			
+			
+			<Anchor>//api/name/importOperationQueue</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

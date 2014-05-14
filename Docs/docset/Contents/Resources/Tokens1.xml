@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PRXAddress.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PRXAddress</TokenIdentifier>
+			<Abstract type="html">PRXAddress</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/setAddressID:</TokenIdentifier>
+			<Abstract type="html">The ID assigned to the address in the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *addressID</Declaration>
+			
+			
+			<Anchor>//api/name/addressID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/addressID</TokenIdentifier>
+			<Abstract type="html">The ID assigned to the address in the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *addressID</Declaration>
+			
+			
+			<Anchor>//api/name/addressID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXAddress/addressID</TokenIdentifier>
+			<Abstract type="html">The ID assigned to the address in the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *addressID</Declaration>
+			
+			
+			<Anchor>//api/name/addressID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/setStreetLine1:</TokenIdentifier>
+			<Abstract type="html">The street information of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *streetLine1</Declaration>
+			
+			
+			<Anchor>//api/name/streetLine1</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/streetLine1</TokenIdentifier>
+			<Abstract type="html">The street information of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *streetLine1</Declaration>
+			
+			
+			<Anchor>//api/name/streetLine1</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXAddress/streetLine1</TokenIdentifier>
+			<Abstract type="html">The street information of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *streetLine1</Declaration>
+			
+			
+			<Anchor>//api/name/streetLine1</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/setStreetLine2:</TokenIdentifier>
+			<Abstract type="html">The extra information about the street of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *streetLine2</Declaration>
+			
+			
+			<Anchor>//api/name/streetLine2</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/streetLine2</TokenIdentifier>
+			<Abstract type="html">The extra information about the street of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *streetLine2</Declaration>
+			
+			
+			<Anchor>//api/name/streetLine2</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXAddress/streetLine2</TokenIdentifier>
+			<Abstract type="html">The extra information about the street of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *streetLine2</Declaration>
+			
+			
+			<Anchor>//api/name/streetLine2</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/setCityName:</TokenIdentifier>
+			<Abstract type="html">The name of the city where the address belongs to</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *cityName</Declaration>
+			
+			
+			<Anchor>//api/name/cityName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/cityName</TokenIdentifier>
+			<Abstract type="html">The name of the city where the address belongs to</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *cityName</Declaration>
+			
+			
+			<Anchor>//api/name/cityName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXAddress/cityName</TokenIdentifier>
+			<Abstract type="html">The name of the city where the address belongs to</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *cityName</Declaration>
+			
+			
+			<Anchor>//api/name/cityName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/setStateAbbrev:</TokenIdentifier>
+			<Abstract type="html">The short representation of the state or region where the address is located in</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *stateAbbrev</Declaration>
+			
+			
+			<Anchor>//api/name/stateAbbrev</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/stateAbbrev</TokenIdentifier>
+			<Abstract type="html">The short representation of the state or region where the address is located in</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *stateAbbrev</Declaration>
+			
+			
+			<Anchor>//api/name/stateAbbrev</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXAddress/stateAbbrev</TokenIdentifier>
+			<Abstract type="html">The short representation of the state or region where the address is located in</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *stateAbbrev</Declaration>
+			
+			
+			<Anchor>//api/name/stateAbbrev</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/setZipCode:</TokenIdentifier>
+			<Abstract type="html">The postal code or zip code corresponding to the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *zipCode</Declaration>
+			
+			
+			<Anchor>//api/name/zipCode</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/zipCode</TokenIdentifier>
+			<Abstract type="html">The postal code or zip code corresponding to the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *zipCode</Declaration>
+			
+			
+			<Anchor>//api/name/zipCode</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXAddress/zipCode</TokenIdentifier>
+			<Abstract type="html">The postal code or zip code corresponding to the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *zipCode</Declaration>
+			
+			
+			<Anchor>//api/name/zipCode</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/setCountryName:</TokenIdentifier>
+			<Abstract type="html">The name of the country where the address belongs to</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *countryName</Declaration>
+			
+			
+			<Anchor>//api/name/countryName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/countryName</TokenIdentifier>
+			<Abstract type="html">The name of the country where the address belongs to</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *countryName</Declaration>
+			
+			
+			<Anchor>//api/name/countryName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXAddress/countryName</TokenIdentifier>
+			<Abstract type="html">The name of the country where the address belongs to</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *countryName</Declaration>
+			
+			
+			<Anchor>//api/name/countryName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/setLatitude:</TokenIdentifier>
+			<Abstract type="html">The latitude of the gps coordinates of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSNumber *latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/latitude</TokenIdentifier>
+			<Abstract type="html">The latitude of the gps coordinates of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSNumber *latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXAddress/latitude</TokenIdentifier>
+			<Abstract type="html">The latitude of the gps coordinates of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSNumber *latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/setLongitude:</TokenIdentifier>
+			<Abstract type="html">The longitude of the gps coordinates of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSNumber *longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/longitude</TokenIdentifier>
+			<Abstract type="html">The longitude of the gps coordinates of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSNumber *longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXAddress/longitude</TokenIdentifier>
+			<Abstract type="html">The longitude of the gps coordinates of the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSNumber *longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/location</TokenIdentifier>
+			<Abstract type="html">Creates a location object based on the latitude and longitude from the address</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>- (CLLocation *)location</Declaration>
+			
+			<ReturnValue><Abstract type="html">location     The CLLocation object created with the latitude and longitude of the location</Abstract></ReturnValue>
+			<Anchor>//api/name/location</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/fullAddress</TokenIdentifier>
+			<Abstract type="html">The full string representation of the addresss with the components seperated by commas.</Abstract>
+			<DeclaredIn>PRXAddress.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)fullAddress</Declaration>
+			
+			<ReturnValue><Abstract type="html">String representation of full address seperated by commas.</Abstract></ReturnValue>
+			<Anchor>//api/name/fullAddress</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXAddress/initWithAddressID:streetLine1:streetLine2:cityName:stateAbbrev:zipCode:countryName:latitude:longitude:</TokenIdentifier>
+			<Abstract type="html">Creates a PRXAddress class with the given address details</Abstract>
+			<DeclaredIn>PRXAddress.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAddressID:(NSString *)addressID streetLine1:(NSString *)streetLine1 streetLine2:(NSString *)streetLine2 cityName:(NSString *)cityName stateAbbrev:(NSString *)stateAbbrev zipCode:(NSString *)zipCode countryName:(NSString *)countryName latitude:(NSNumber *)latitude longitude:(NSNumber *)longitude</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>addressID</Name>
+					<Abstract type="html">The ID of the address</Abstract>
+				</Parameter><Parameter>
+					<Name>streetLine1</Name>
+					<Abstract type="html">The street the address belongs too</Abstract>
+				</Parameter><Parameter>
+					<Name>streetLine2</Name>
+					<Abstract type="html">Extra information about the street</Abstract>
+				</Parameter><Parameter>
+					<Name>cityName</Name>
+					<Abstract type="html">The name of the city where the address physically is</Abstract>
+				</Parameter><Parameter>
+					<Name>stateAbbrev</Name>
+					<Abstract type="html">The state/region where the address physically is</Abstract>
+				</Parameter><Parameter>
+					<Name>zipCode</Name>
+					<Abstract type="html">ZipCode/Postal code corresponding to the address</Abstract>
+				</Parameter><Parameter>
+					<Name>countryName</Name>
+					<Abstract type="html">Country of the address</Abstract>
+				</Parameter><Parameter>
+					<Name>latitude</Name>
+					<Abstract type="html">GPS coordinates of the address (latitude</Abstract>
+				</Parameter><Parameter>
+					<Name>longitude</Name>
+					<Abstract type="html">GPS coordinates of the address (longitude</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created PRXAddress object with the given address data</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAddressID:streetLine1:streetLine2:cityName:stateAbbrev:zipCode:countryName:latitude:longitude:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

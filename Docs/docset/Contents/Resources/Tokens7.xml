@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PRXSmartSpace.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PRXSmartSpace</TokenIdentifier>
+			<Abstract type="html">PRXSmartSpace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setSmartSpaceID:</TokenIdentifier>
+			<Abstract type="html">The ID for the smartspace from the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *smartSpaceID</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/smartSpaceID</TokenIdentifier>
+			<Abstract type="html">The ID for the smartspace from the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *smartSpaceID</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/smartSpaceID</TokenIdentifier>
+			<Abstract type="html">The ID for the smartspace from the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *smartSpaceID</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setName:</TokenIdentifier>
+			<Abstract type="html">The user friendly name for the smart space</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/name</TokenIdentifier>
+			<Abstract type="html">The user friendly name for the smart space</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/name</TokenIdentifier>
+			<Abstract type="html">The user friendly name for the smart space</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setSmartSpaceDescription:</TokenIdentifier>
+			<Abstract type="html">The description of the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *smartSpaceDescription</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceDescription</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/smartSpaceDescription</TokenIdentifier>
+			<Abstract type="html">The description of the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *smartSpaceDescription</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceDescription</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/smartSpaceDescription</TokenIdentifier>
+			<Abstract type="html">The description of the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *smartSpaceDescription</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceDescription</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setAddress:</TokenIdentifier>
+			<Abstract type="html">The physical location / address where the smartspace is located at</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PRXAddress *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/address</TokenIdentifier>
+			<Abstract type="html">The physical location / address where the smartspace is located at</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PRXAddress *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/address</TokenIdentifier>
+			<Abstract type="html">The physical location / address where the smartspace is located at</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) PRXAddress *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setCreatedAt:</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was created</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/createdAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was created</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/createdAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was created</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setModifiedAt:</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was updated/modified</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *modifiedAt</Declaration>
+			
+			
+			<Anchor>//api/name/modifiedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/modifiedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was updated/modified</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *modifiedAt</Declaration>
+			
+			
+			<Anchor>//api/name/modifiedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/modifiedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was updated/modified</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *modifiedAt</Declaration>
+			
+			
+			<Anchor>//api/name/modifiedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setState:</TokenIdentifier>
+			<Abstract type="html">The monitored state of the mobile device in the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) PRXSmartSpaceState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/state</TokenIdentifier>
+			<Abstract type="html">The monitored state of the mobile device in the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) PRXSmartSpaceState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/state</TokenIdentifier>
+			<Abstract type="html">The monitored state of the mobile device in the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) PRXSmartSpaceState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setEnteredAt:</TokenIdentifier>
+			<Abstract type="html">The time when the mobile device currently entered the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *enteredAt</Declaration>
+			
+			
+			<Anchor>//api/name/enteredAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/enteredAt</TokenIdentifier>
+			<Abstract type="html">The time when the mobile device currently entered the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *enteredAt</Declaration>
+			
+			
+			<Anchor>//api/name/enteredAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/enteredAt</TokenIdentifier>
+			<Abstract type="html">The time when the mobile device currently entered the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *enteredAt</Declaration>
+			
+			
+			<Anchor>//api/name/enteredAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setExitedAt:</TokenIdentifier>
+			<Abstract type="html">The time when the mobile device currently exited from the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *exitedAt</Declaration>
+			
+			
+			<Anchor>//api/name/exitedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/exitedAt</TokenIdentifier>
+			<Abstract type="html">The time when the mobile device currently exited from the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *exitedAt</Declaration>
+			
+			
+			<Anchor>//api/name/exitedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/exitedAt</TokenIdentifier>
+			<Abstract type="html">The time when the mobile device currently exited from the smartspace</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *exitedAt</Declaration>
+			
+			
+			<Anchor>//api/name/exitedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setTimeSpentInSmartSpace:</TokenIdentifier>
+			<Abstract type="html">The time spent by the mobile device in the smartspace (between currently entered and currently exited)</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timeSpentInSmartSpace</Declaration>
+			
+			
+			<Anchor>//api/name/timeSpentInSmartSpace</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/timeSpentInSmartSpace</TokenIdentifier>
+			<Abstract type="html">The time spent by the mobile device in the smartspace (between currently entered and currently exited)</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timeSpentInSmartSpace</Declaration>
+			
+			
+			<Anchor>//api/name/timeSpentInSmartSpace</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/timeSpentInSmartSpace</TokenIdentifier>
+			<Abstract type="html">The time spent by the mobile device in the smartspace (between currently entered and currently exited)</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval timeSpentInSmartSpace</Declaration>
+			
+			
+			<Anchor>//api/name/timeSpentInSmartSpace</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setTotalVisits:</TokenIdentifier>
+			<Abstract type="html">The total number of times the smartspace was visited by the mobile device</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger totalVisits</Declaration>
+			
+			
+			<Anchor>//api/name/totalVisits</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/totalVisits</TokenIdentifier>
+			<Abstract type="html">The total number of times the smartspace was visited by the mobile device</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger totalVisits</Declaration>
+			
+			
+			<Anchor>//api/name/totalVisits</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/totalVisits</TokenIdentifier>
+			<Abstract type="html">The total number of times the smartspace was visited by the mobile device</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSInteger totalVisits</Declaration>
+			
+			
+			<Anchor>//api/name/totalVisits</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setLastEnteredAt:</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was entered the last time</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *lastEnteredAt</Declaration>
+			
+			
+			<Anchor>//api/name/lastEnteredAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/lastEnteredAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was entered the last time</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *lastEnteredAt</Declaration>
+			
+			
+			<Anchor>//api/name/lastEnteredAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/lastEnteredAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was entered the last time</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *lastEnteredAt</Declaration>
+			
+			
+			<Anchor>//api/name/lastEnteredAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setLastExitedAt:</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was exited the last time</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *lastExitedAt</Declaration>
+			
+			
+			<Anchor>//api/name/lastExitedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/lastExitedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was exited the last time</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *lastExitedAt</Declaration>
+			
+			
+			<Anchor>//api/name/lastExitedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/lastExitedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace was exited the last time</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *lastExitedAt</Declaration>
+			
+			
+			<Anchor>//api/name/lastExitedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setLastTimeSpentInSmartSpace:</TokenIdentifier>
+			<Abstract type="html">The time spent by the mobile device during the last entry / exit</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval lastTimeSpentInSmartSpace</Declaration>
+			
+			
+			<Anchor>//api/name/lastTimeSpentInSmartSpace</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/lastTimeSpentInSmartSpace</TokenIdentifier>
+			<Abstract type="html">The time spent by the mobile device during the last entry / exit</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval lastTimeSpentInSmartSpace</Declaration>
+			
+			
+			<Anchor>//api/name/lastTimeSpentInSmartSpace</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/lastTimeSpentInSmartSpace</TokenIdentifier>
+			<Abstract type="html">The time spent by the mobile device during the last entry / exit</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) NSTimeInterval lastTimeSpentInSmartSpace</Declaration>
+			
+			
+			<Anchor>//api/name/lastTimeSpentInSmartSpace</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/initWithSmartSpace:</TokenIdentifier>
+			<Abstract type="html">Initializes and Creates a smartspace object based on smartspace data stored in disk (coredata)</Abstract>
+			<DeclaredIn>PRXSmartSpace.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithSmartSpace:(PRXMSmartSpace *)space</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The corelocation object containing the smartspace data</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created smartspace object based on the coredata smartspace object</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSmartSpace:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</TokenIdentifier>
+			<Abstract type="html">Initializes and Creates a smartspace object based on the given smartspace properties</Abstract>
+			<DeclaredIn>PRXSmartSpace.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithID:(NSString *)smarSpaceID name:(NSString *)name description:(NSString *)description createdAt:(NSDate *)createdAt modifiedAt:(NSDate *)modifiedAt synchedAt:(NSDate *)synchedAt synched:(BOOL)synched address:(PRXAddress *)address beaconRegion:(CLBeaconRegion *)region state:(PRXSmartSpaceState)state enteredAt:(NSDate *)enteredAt exitedAt:(NSDate *)exitedAt timeSpent:(NSInteger)timeSpent lastEnteredAt:(NSDate *)lastEnteredAt lastExitedAt:(NSDate *)lastExitedAt lastTimeSpent:(NSInteger)lastTimeSpent totalVisits:(NSInteger)visits</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>smarSpaceID</Name>
+					<Abstract type="html">The ID for the smartspace from the Proxible Cloud</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The user friendly name for the smart space</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">The description of the smartspace</Abstract>
+				</Parameter><Parameter>
+					<Name>createdAt</Name>
+					<Abstract type="html">The time when the smartspace was created</Abstract>
+				</Parameter><Parameter>
+					<Name>modifiedAt</Name>
+					<Abstract type="html">The time when the smartspace was updated/modified</Abstract>
+				</Parameter><Parameter>
+					<Name>synchedAt</Name>
+					<Abstract type="html">The time when the smart space state and properties were synched with the Proxible Cloud</Abstract>
+				</Parameter><Parameter>
+					<Name>synched</Name>
+					<Abstract type="html">Flag that indicates if the smart space state and properties are synched with the Proxible Cloud</Abstract>
+				</Parameter><Parameter>
+					<Name>address</Name>
+					<Abstract type="html">The physical location / address where the smartspace is located at</Abstract>
+				</Parameter><Parameter>
+					<Name>region</Name>
+					<Abstract type="html">The beacon region (Corelocation class) for which the smartspace belongs to</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The monitored state of the mobile device in the smartspace</Abstract>
+				</Parameter><Parameter>
+					<Name>enteredAt</Name>
+					<Abstract type="html">The time when the mobile device currently entered the smartspace</Abstract>
+				</Parameter><Parameter>
+					<Name>exitedAt</Name>
+					<Abstract type="html">The time when the mobile device currently exited from the smartspace</Abstract>
+				</Parameter><Parameter>
+					<Name>timeSpent</Name>
+					<Abstract type="html">The time spent by the mobile device in the smartspace (between currently entered and currently exited)</Abstract>
+				</Parameter><Parameter>
+					<Name>lastEnteredAt</Name>
+					<Abstract type="html">The time when the smartspace was entered the last time</Abstract>
+				</Parameter><Parameter>
+					<Name>lastExitedAt</Name>
+					<Abstract type="html">The time when the smartspace was exited the last time</Abstract>
+				</Parameter><Parameter>
+					<Name>lastTimeSpent</Name>
+					<Abstract type="html">The time spent by the mobile device during the last entry / exit</Abstract>
+				</Parameter><Parameter>
+					<Name>visits</Name>
+					<Abstract type="html">The total number of times the smartspace was visited by the mobile device</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created smartspace object based on the given smartspace properties</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXSmartSpace/stateForRegionState:</TokenIdentifier>
+			<Abstract type="html">Creates a PRXSmartSpaceState Object based on a given corelocation state of a monitored region</Abstract>
+			<DeclaredIn>PRXSmartSpace.m</DeclaredIn>
+			
+			<Declaration>+ (PRXSmartSpaceState)stateForRegionState:(CLRegionState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The corelocation region state based on which the object needs to be created</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The PRXSmartSpaceState object created based on the given corelocation state of a monitored region</Abstract></ReturnValue>
+			<Anchor>//api/name/stateForRegionState:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setSynched:</TokenIdentifier>
+			<Abstract type="html">Indicates if the smart space state and properties are synched with the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXSmartSpace__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL synched</Declaration>
+			
+			
+			<Anchor>//api/name/synched</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/synched</TokenIdentifier>
+			<Abstract type="html">Indicates if the smart space state and properties are synched with the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXSmartSpace__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL synched</Declaration>
+			
+			
+			<Anchor>//api/name/synched</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/synched</TokenIdentifier>
+			<Abstract type="html">Indicates if the smart space state and properties are synched with the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXSmartSpace__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readwrite) BOOL synched</Declaration>
+			
+			
+			<Anchor>//api/name/synched</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setSyncedAt:</TokenIdentifier>
+			<Abstract type="html">The time when the smart space state and properties were synched with the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXSmartSpace__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readwrite) NSDate *syncedAt</Declaration>
+			
+			
+			<Anchor>//api/name/syncedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/syncedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smart space state and properties were synched with the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXSmartSpace__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readwrite) NSDate *syncedAt</Declaration>
+			
+			
+			<Anchor>//api/name/syncedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/syncedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smart space state and properties were synched with the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXSmartSpace__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readwrite) NSDate *syncedAt</Declaration>
+			
+			
+			<Anchor>//api/name/syncedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setRegion:</TokenIdentifier>
+			<Abstract type="html">The core location beacon region data (UUID, major and minor) corresponding to the smart space</Abstract>
+			<DeclaredIn>PRXSmartSpace__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLBeaconRegion *region</Declaration>
+			
+			
+			<Anchor>//api/name/region</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/region</TokenIdentifier>
+			<Abstract type="html">The core location beacon region data (UUID, major and minor) corresponding to the smart space</Abstract>
+			<DeclaredIn>PRXSmartSpace__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLBeaconRegion *region</Declaration>
+			
+			
+			<Anchor>//api/name/region</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/region</TokenIdentifier>
+			<Abstract type="html">The core location beacon region data (UUID, major and minor) corresponding to the smart space</Abstract>
+			<DeclaredIn>PRXSmartSpace__Private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CLBeaconRegion *region</Declaration>
+			
+			
+			<Anchor>//api/name/region</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
