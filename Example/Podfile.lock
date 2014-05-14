@@ -1,0 +1,49 @@
+PODS:
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - HexColors (2.2.1)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+  - MBProgressHUD (0.8)
+  - ProxibleSDK (0.0.1):
+    - AFNetworking (~> 2.2.3)
+    - MagicalRecord (~> 2.2)
+  - TSMessages (0.9.9):
+    - HexColors
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 0.8)
+  - ProxibleSDK (from `https://github.com/Proxible/Proxible-ios-sdk.git`)
+  - TSMessages (~> 0.9.9)
+
+EXTERNAL SOURCES:
+  ProxibleSDK:
+    :git: https://github.com/Proxible/Proxible-ios-sdk.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 01aa7c3aa9a200b94943e54072a4373f14b3d219
+  HexColors: 99211502e17904af7891fc8f687d0e4958a6d66e
+  MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  ProxibleSDK: ec020334d1c11fdb685d368229e843af23e7a162
+  TSMessages: 49f9083df41d320b34e8d66c5ed3ef147e543187
+
+COCOAPODS: 0.32.1

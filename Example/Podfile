@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+
+target 'SDKDemo' do
+    pod 'TSMessages', '~> 0.9.9'
+    pod 'MBProgressHUD', '~> 0.8'
+    pod 'ProxibleSDK', :git => 'https://github.com/Proxible/Proxible-ios-sdk.git'
+end
+
+target 'SDKDemoTests' do
+
+end
+
