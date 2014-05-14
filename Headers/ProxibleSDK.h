@@ -7,16 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import <ProxibleSDK/PRXSmartSpace.h>
-//#import <ProxibleSDK/PRXAddress.h>
-//#import <ProxibleSDK/PRXContent.h>
-//#import <ProxibleSDK/PRXBeacon.h>
-//#import <ProxibleSDK/PRXLocationManager.h>
-//#import <ProxibleSDK/PRXLocationManagerDelegate.h>
-//#import <ProxibleSDK/PRXSmartSpaceManager.h>
-//#import <ProxibleSDK/PRXContentManager.h>
-//#import <ProxibleSDK/PRXBeaconFilter.h>
-//#import <ProxibleSDK/PRXError.h>
+#import <ProxibleSDK/PRXSmartSpace.h>
+#import <ProxibleSDK/PRXAddress.h>
+#import <ProxibleSDK/PRXContent.h>
+#import <ProxibleSDK/PRXBeacon.h>
+#import <ProxibleSDK/PRXLocationManager.h>
+#import <ProxibleSDK/PRXLocationManagerDelegate.h>
+#import <ProxibleSDK/PRXSmartSpaceManager.h>
+#import <ProxibleSDK/PRXContentManager.h>
+#import <ProxibleSDK/PRXBeaconFilter.h>
+#import <ProxibleSDK/PRXError.h>
 
 extern NSString * const PRXTrackingOptionEnabled;
 
