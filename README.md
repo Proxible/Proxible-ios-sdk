@@ -1,4 +1,4 @@
-Proxible SDK for iOS7
+Proxible SDK
 ================
 
 ## Getting Started
