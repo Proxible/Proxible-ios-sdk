@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-//TODO: Add custom error domain and codes for errors that occur in our SDK.
 
-/*!
+/**
  *  @const ProxibleBeaconSDKDomain
- *  @discussion The NSError domain of all errors returned by the ProxibleBeacon SDK.
+ *   @discussion The NSError domain of all errors returned by the ProxibleBeacon SDK.
  */
 extern NSString *const ProxibleMonotoringDomain;
 extern NSString *const ProxibleWebAPIDomain;
+
 /*!
  @abstract Error codes returned by the Proxible SDK in NSError.
  

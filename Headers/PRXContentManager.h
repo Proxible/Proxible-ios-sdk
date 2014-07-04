@@ -41,6 +41,10 @@
  */
 -(PRXContent*)contentForSmartSpace:(PRXSmartSpace*)space;
 
+/*! Retrieves the content for the application from the disk
+ *
+ */
+-(PRXContent*)applicationContent;
 
 /*! Downloads and updates the contents for a given smartspaces from the cloud
  *
@@ -48,5 +52,11 @@
  * @param completion    The completion block to be executed after the downloading is done
  */
 -(void)getContentForSmartSpace:(PRXSmartSpace*)space completion:(void(^)(PRXContent*content,NSError *error))completion;
+
+/*! Downloads and updates the contents for the application from the cloud
+ *
+ * @param completion    The completion block to be executed after the downloading is done
+ */
+-(void)getContentForApplicationWithCompletion:(void(^)(id object, NSError *error))completion;
 
 @end

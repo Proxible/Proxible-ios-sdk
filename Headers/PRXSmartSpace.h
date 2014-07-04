@@ -72,6 +72,11 @@ extern NSString * NSStringFromSmartSpaceState(PRXSmartSpaceState state);
 @property (nonatomic,copy,readonly) NSDate *createdAt;
 
 /**
+ The time when the smartspace content was last modified
+ */
+@property (nonatomic,copy,readonly) NSString *contentLastModifiedAt;
+
+/**
  The time when the smartspace was updated/modified
  */
 @property (nonatomic,copy,readonly) NSDate *modifiedAt;

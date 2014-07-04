@@ -16,6 +16,11 @@
  */
 @interface PRXContent : NSObject
 
+/**
+ The ID for the smartspace that the content belongs to from the Proxible Cloud
+ */
+@property (nonatomic,copy,readonly)NSString *smartSpaceID;
+
 /** 
  The list of text content belonging to the content
  */
@@ -25,6 +30,11 @@
  The list of media content belonging to the content
  */
 @property (nonatomic,copy,readonly)NSDictionary *mediaContent;
+
+/**
+ The time when the smartspace content was last modified
+ */
+@property (nonatomic,copy,readonly) NSString *contentLastModifiedAt;
 
 /**
  The list of text content keys
