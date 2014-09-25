@@ -18,6 +18,14 @@
 #import "PRXBeaconFilter.h"
 #import "PRXError.h"
 
+
+//Default to staging
+typedef NS_ENUM(NSInteger, PRXEnviroment){
+    Development,
+    Staging,
+    Producton
+};
+
 extern NSString * const PRXTrackingOptionEnabled;
 
 /**
@@ -58,5 +66,20 @@ extern NSString * const PRXTrackingOptionEnabled;
  * @return The apiKey that is required to access the cloud via the SDK
  */
 +(NSString*)apiKey;
+
+
+/**
+ *  The current enviroment used for the SDK
+ *
+ *  @return Enviroment enum
+ */
++(PRXEnviroment)environment;
+
+/**
+ *  Set the enum to the desired cloud enviroment
+ *
+ *  @param enviroment The envrioment to set the SDK to point to
+ */
++(void)setEnvironment:(PRXEnviroment)environment;
 
 @end

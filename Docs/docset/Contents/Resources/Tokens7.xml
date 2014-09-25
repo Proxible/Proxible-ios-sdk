@@ -193,6 +193,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setContentLastModifiedAt:</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace content was last modified</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentLastModifiedAt</Declaration>
+			
+			
+			<Anchor>//api/name/contentLastModifiedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/contentLastModifiedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace content was last modified</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentLastModifiedAt</Declaration>
+			
+			
+			<Anchor>//api/name/contentLastModifiedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXSmartSpace/contentLastModifiedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace content was last modified</Abstract>
+			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentLastModifiedAt</Declaration>
+			
+			
+			<Anchor>//api/name/contentLastModifiedAt</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/setModifiedAt:</TokenIdentifier>
 			<Abstract type="html">The time when the smartspace was updated/modified</Abstract>
 			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
@@ -534,11 +570,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpace/initWithID:name:description:createdAt:contentLastModifiedAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</TokenIdentifier>
 			<Abstract type="html">Initializes and Creates a smartspace object based on the given smartspace properties</Abstract>
 			<DeclaredIn>PRXSmartSpace.m</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithID:(NSString *)smarSpaceID name:(NSString *)name description:(NSString *)description createdAt:(NSDate *)createdAt modifiedAt:(NSDate *)modifiedAt synchedAt:(NSDate *)synchedAt synched:(BOOL)synched address:(PRXAddress *)address beaconRegion:(CLBeaconRegion *)region state:(PRXSmartSpaceState)state enteredAt:(NSDate *)enteredAt exitedAt:(NSDate *)exitedAt timeSpent:(NSInteger)timeSpent lastEnteredAt:(NSDate *)lastEnteredAt lastExitedAt:(NSDate *)lastExitedAt lastTimeSpent:(NSInteger)lastTimeSpent totalVisits:(NSInteger)visits</Declaration>
+			<Declaration>- (instancetype)initWithID:(NSString *)smarSpaceID name:(NSString *)name description:(NSString *)description createdAt:(NSDate *)createdAt contentLastModifiedAt:(NSDate *)contentLastModifiedAt modifiedAt:(NSDate *)modifiedAt synchedAt:(NSDate *)synchedAt synched:(BOOL)synched address:(PRXAddress *)address beaconRegion:(CLBeaconRegion *)region state:(PRXSmartSpaceState)state enteredAt:(NSDate *)enteredAt exitedAt:(NSDate *)exitedAt timeSpent:(NSInteger)timeSpent lastEnteredAt:(NSDate *)lastEnteredAt lastExitedAt:(NSDate *)lastExitedAt lastTimeSpent:(NSInteger)lastTimeSpent totalVisits:(NSInteger)visits</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>smarSpaceID</Name>
@@ -552,6 +588,9 @@
 				</Parameter><Parameter>
 					<Name>createdAt</Name>
 					<Abstract type="html">The time when the smartspace was created</Abstract>
+				</Parameter><Parameter>
+					<Name>contentLastModifiedAt</Name>
+					<Abstract type="html">The time when the smartspace content was last modified</Abstract>
 				</Parameter><Parameter>
 					<Name>modifiedAt</Name>
 					<Abstract type="html">The time when the smartspace was updated/modified</Abstract>
@@ -594,7 +633,7 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">A newly created smartspace object based on the given smartspace properties</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithID:name:description:createdAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</Anchor>
+			<Anchor>//api/name/initWithID:name:description:createdAt:contentLastModifiedAt:modifiedAt:synchedAt:synched:address:beaconRegion:state:enteredAt:exitedAt:timeSpent:lastEnteredAt:lastExitedAt:lastTimeSpent:totalVisits:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		

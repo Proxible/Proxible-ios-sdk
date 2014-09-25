@@ -39,7 +39,11 @@
 	
 	<option value="properties">Properties</option>
 	
+	<option value="//api/name/contentLastModifiedAt">&nbsp;&nbsp;&nbsp;&nbsp;contentLastModifiedAt</option>
+	
 	<option value="//api/name/mediaContent">&nbsp;&nbsp;&nbsp;&nbsp;mediaContent</option>
+	
+	<option value="//api/name/smartSpaceID">&nbsp;&nbsp;&nbsp;&nbsp;smartSpaceID</option>
 	
 	<option value="//api/name/textContent">&nbsp;&nbsp;&nbsp;&nbsp;textContent</option>
 	
@@ -52,7 +56,7 @@
 	
 	<option value="//api/name/initWithContent:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithContent:</option>
 	
-	<option value="//api/name/initWithTextContents:mediaContents:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTextContents:mediaContents:</option>
+	<option value="//api/name/initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:</option>
 	
 	<option value="//api/name/mediaContentItems">&nbsp;&nbsp;&nbsp;&nbsp;- mediaContentItems</option>
 	
@@ -86,7 +90,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentLastModifiedAt">contentLastModifiedAt</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaContent">mediaContent</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/smartSpaceID">smartSpaceID</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textContent">textContent</a></span></li>
 	
@@ -100,7 +108,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithContent:">initWithContent:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTextContents:mediaContents:">initWithTextContents:mediaContents:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:">initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mediaContentItems">mediaContentItems</a></span></li>
 	
@@ -168,6 +176,12 @@ The PRXContent class represents the model of a local copy of content correspondi
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/smartSpaceID">&nbsp;&nbsp;smartSpaceID</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/textContent">&nbsp;&nbsp;textContent</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
@@ -175,6 +189,12 @@ The PRXContent class represents the model of a local copy of content correspondi
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/mediaContent">&nbsp;&nbsp;mediaContent</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentLastModifiedAt">&nbsp;&nbsp;contentLastModifiedAt</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -218,7 +238,7 @@ The PRXContent class represents the model of a local copy of content correspondi
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithTextContents:mediaContents:">&ndash;&nbsp;initWithTextContents:mediaContents:</a></code>
+		<code><a href="#//api/name/initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:">&ndash;&nbsp;initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:</a></code>
 	</span>
 	
 	
@@ -236,6 +256,42 @@ The PRXContent class represents the model of a local copy of content correspondi
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/contentLastModifiedAt" title="contentLastModifiedAt"></a>
+	<h3 class="subsubtitle method-title">contentLastModifiedAt</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The time when the smartspace content was last modified</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *contentLastModifiedAt</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXContent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/mediaContent" title="mediaContent"></a>
 	<h3 class="subsubtitle method-title">mediaContent</h3>
 	
@@ -248,6 +304,42 @@ The PRXContent class represents the model of a local copy of content correspondi
     
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSDictionary *mediaContent</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXContent.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/smartSpaceID" title="smartSpaceID"></a>
+	<h3 class="subsubtitle method-title">smartSpaceID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The ID for the smartspace that the content belongs to from the Proxible Cloud</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *smartSpaceID</code></div>
 
     
 	
@@ -369,8 +461,8 @@ The PRXContent class represents the model of a local copy of content correspondi
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithTextContents:mediaContents:" title="initWithTextContents:mediaContents:"></a>
-	<h3 class="subsubtitle method-title">initWithTextContents:mediaContents:</h3>
+	<a name="//api/name/initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:" title="initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:"></a>
+	<h3 class="subsubtitle method-title">initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:</h3>
 	
 	
 	
@@ -380,7 +472,7 @@ The PRXContent class represents the model of a local copy of content correspondi
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (instancetype)initWithTextContents:(NSDictionary *)<em>textContants</em> mediaContents:(NSDictionary *)<em>mediaContents</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithSmartSpaceID:(NSString *)<em>smartSpaceID</em> textContents:(NSDictionary *)<em>textContants</em> mediaContents:(NSDictionary *)<em>mediaContents</em> contentLastModifiedAt:(NSString *)<em>contentLastModifiedAt</em></code></div>
 
     
 	
@@ -583,7 +675,7 @@ The PRXContent class represents the model of a local copy of content correspondi
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-05-14)</span><br />
+						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-09-25)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

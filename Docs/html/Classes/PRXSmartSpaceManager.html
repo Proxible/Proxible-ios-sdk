@@ -59,7 +59,11 @@
 	
 	<option value="//api/name/allSmartSpaces">&nbsp;&nbsp;&nbsp;&nbsp;- allSmartSpaces</option>
 	
+	<option value="//api/name/getAllSmartSpacesShouldIncludeContent:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- getAllSmartSpacesShouldIncludeContent:completion:</option>
+	
 	<option value="//api/name/getAllSmartSpacesWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- getAllSmartSpacesWithCompletion:</option>
+	
+	<option value="//api/name/modelSmartSpaceWithID:">&nbsp;&nbsp;&nbsp;&nbsp;- modelSmartSpaceWithID:</option>
 	
 	<option value="//api/name/smartSpaceWithID:">&nbsp;&nbsp;&nbsp;&nbsp;- smartSpaceWithID:</option>
 	
@@ -113,7 +117,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allSmartSpaces">allSmartSpaces</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllSmartSpacesShouldIncludeContent:completion:">getAllSmartSpacesShouldIncludeContent:completion:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAllSmartSpacesWithCompletion:">getAllSmartSpacesWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/modelSmartSpaceWithID:">modelSmartSpaceWithID:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/smartSpaceWithID:">smartSpaceWithID:</a></span></li>
 	
@@ -189,6 +197,12 @@ The PRXSmartSpaceManager class acts as a handler for all Smartspace related data
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/smartSpaceWithID:">&ndash;&nbsp;smartSpaceWithID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/allSmartSpaces">&ndash;&nbsp;allSmartSpaces</a></code>
 	</span>
 	
@@ -196,6 +210,12 @@ The PRXSmartSpaceManager class acts as a handler for all Smartspace related data
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getAllSmartSpacesWithCompletion:">&ndash;&nbsp;getAllSmartSpacesWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAllSmartSpacesShouldIncludeContent:completion:">&ndash;&nbsp;getAllSmartSpacesShouldIncludeContent:completion:</a></code>
 	</span>
 	
 	
@@ -209,7 +229,7 @@ The PRXSmartSpaceManager class acts as a handler for all Smartspace related data
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/smartSpaceWithID:">&ndash;&nbsp;smartSpaceWithID:</a></code>
+		<code><a href="#//api/name/modelSmartSpaceWithID:">&ndash;&nbsp;modelSmartSpaceWithID:</a></code>
 	</span>
 	
 	
@@ -459,6 +479,57 @@ The PRXSmartSpaceManager class acts as a handler for all Smartspace related data
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/getAllSmartSpacesShouldIncludeContent:completion:" title="getAllSmartSpacesShouldIncludeContent:completion:"></a>
+	<h3 class="subsubtitle method-title">getAllSmartSpacesShouldIncludeContent:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Downloads and synchronizes all the the smartspaces with the option to include the smart space content from the cloud</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)getAllSmartSpacesShouldIncludeContent:(BOOL)<em>includeContent</em> completion:(void ( ^ ) ( NSArray *smartSpaces , NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>includeContent</em></dt>
+			<dd><p>Boolean indicating to download and synchronize all content</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The completion block to be executed after the fetching is done</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXSmartSpaceManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/getAllSmartSpacesWithCompletion:" title="getAllSmartSpacesWithCompletion:"></a>
 	<h3 class="subsubtitle method-title">getAllSmartSpacesWithCompletion:</h3>
 	
@@ -505,8 +576,8 @@ The PRXSmartSpaceManager class acts as a handler for all Smartspace related data
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/smartSpaceWithID:" title="smartSpaceWithID:"></a>
-	<h3 class="subsubtitle method-title">smartSpaceWithID:</h3>
+	<a name="//api/name/modelSmartSpaceWithID:" title="modelSmartSpaceWithID:"></a>
+	<h3 class="subsubtitle method-title">modelSmartSpaceWithID:</h3>
 	
 	
 	
@@ -516,7 +587,7 @@ The PRXSmartSpaceManager class acts as a handler for all Smartspace related data
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (PRXMSmartSpace *)smartSpaceWithID:(NSString *)<em>smartSpaceID</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (PRXMSmartSpace *)modelSmartSpaceWithID:(NSString *)<em>smartSpaceID</em></code></div>
 
     
 	
@@ -550,6 +621,52 @@ The PRXSmartSpaceManager class acts as a handler for all Smartspace related data
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
 		<code class="declared-in-ref">PRXSmartSpaceManager__Private.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/smartSpaceWithID:" title="smartSpaceWithID:"></a>
+	<h3 class="subsubtitle method-title">smartSpaceWithID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fetches an immutable copy of the smart space with the specified smart space id stored locally on the disk.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PRXSmartSpace *)smartSpaceWithID:(NSString *)<em>smartSpaceID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>smartSpaceID</em></dt>
+			<dd><p>The smart space id</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PRXSmartSpaceManager.h</code><br />
 	</div>				
 	
 	
@@ -626,7 +743,7 @@ The PRXSmartSpaceManager class acts as a handler for all Smartspace related data
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-05-14)</span><br />
+						<p><span class="copyright">&copy; 2014 Proxible. All rights reserved. (Last updated: 2014-09-25)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

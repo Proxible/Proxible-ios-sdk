@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/PRXSmartSpaceState.html">
+	<File path="Constants/PRXEnviroment.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/PRXSmartSpaceState</TokenIdentifier>
-			<Abstract type="html">This is an enum class listing the different states of a smartspace</Abstract>
-			<DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/PRXEnviroment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ProxibleSDK.h</DeclaredIn>
             
 			
 			<NodeRef refid="11"/>
@@ -14,31 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PRXSmartSpaceStateUnknown</TokenIdentifier>
-            <Abstract type="html">Smartspace state is Unknown</Abstract>
-            <Declaration>PRXSmartSpaceStateUnknown</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/Development</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Development</Declaration>
             
-            <DeclaredIn>PRXSmartSpace.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PRXSmartSpaceStateInside</TokenIdentifier>
-            <Abstract type="html">Mobile device inside smartspace</Abstract>
-            <Declaration>PRXSmartSpaceStateInside</Declaration>
-            
-            <DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+            <DeclaredIn>ProxibleSDK.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PRXSmartSpaceStateOutside</TokenIdentifier>
-            <Abstract type="html">Mobile device outside smartspace</Abstract>
-            <Declaration>PRXSmartSpaceStateOutside</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/Staging</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Staging</Declaration>
             
-            <DeclaredIn>PRXSmartSpace.h</DeclaredIn>
+            <DeclaredIn>ProxibleSDK.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Producton</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Producton</Declaration>
+            
+            <DeclaredIn>ProxibleSDK.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>

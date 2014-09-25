@@ -41,6 +41,7 @@
 					<Path>index.html</Path>
 					<Subnodes>
 						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
 						
 					</Subnodes>
 				</Node>
@@ -390,6 +391,11 @@
         </Node>
 		
         <Node id="11" type="file" documentType="reference">
+            <Name>PRXEnviroment</Name>
+            <Path>Constants/PRXEnviroment.html</Path>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
             <Name>PRXSmartSpaceState</Name>
             <Path>Constants/PRXSmartSpaceState.html</Path>
             

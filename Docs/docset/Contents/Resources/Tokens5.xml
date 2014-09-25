@@ -90,6 +90,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/applicationContent</TokenIdentifier>
+			<Abstract type="html">Retrieves the content for the application from the disk</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>- (PRXContent *)applicationContent</Declaration>
+			
+			
+			<Anchor>//api/name/applicationContent</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/getContentForSmartSpace:completion:</TokenIdentifier>
 			<Abstract type="html">Downloads and updates the contents for a given smartspaces from the cloud</Abstract>
 			<DeclaredIn>PRXContentManager.h</DeclaredIn>
@@ -106,6 +118,46 @@
 			</Parameters>
 			
 			<Anchor>//api/name/getContentForSmartSpace:completion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/getContentForSmartSpace:forceReload:completion:</TokenIdentifier>
+			<Abstract type="html">Downloads and updates the contents for a given smartspaces from the cloud</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>- (void)getContentForSmartSpace:(PRXSmartSpace *)space forceReload:(BOOL)forceReload completion:(void ( ^ ) ( PRXContent *content , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>space</Name>
+					<Abstract type="html">The smartspace for which the content needs to be downloaded</Abstract>
+				</Parameter><Parameter>
+					<Name>forceReload</Name>
+					<Abstract type="html">Boolean indicating if the contentLastModified property should be ignored. Setting it to YES will always return a response from the cloud. Setting it to NO will check the local content last modified value with that of the cloud and if they are different the cloud will send a response.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion block to be executed after the downloading is done</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentForSmartSpace:forceReload:completion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/getContentForApplicationWithCompletion:</TokenIdentifier>
+			<Abstract type="html">Downloads and updates the contents for the application from the cloud</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>- (void)getContentForApplicationWithCompletion:(void ( ^ ) ( id object , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion block to be executed after the downloading is done</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentForApplicationWithCompletion:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

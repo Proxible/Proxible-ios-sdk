@@ -13,6 +13,42 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/setSmartSpaceID:</TokenIdentifier>
+			<Abstract type="html">The ID for the smartspace that the content belongs to from the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *smartSpaceID</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/smartSpaceID</TokenIdentifier>
+			<Abstract type="html">The ID for the smartspace that the content belongs to from the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *smartSpaceID</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContent/smartSpaceID</TokenIdentifier>
+			<Abstract type="html">The ID for the smartspace that the content belongs to from the Proxible Cloud</Abstract>
+			<DeclaredIn>PRXContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *smartSpaceID</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpaceID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/setTextContent:</TokenIdentifier>
 			<Abstract type="html">The list of text content belonging to the content</Abstract>
 			<DeclaredIn>PRXContent.h</DeclaredIn>
@@ -85,6 +121,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/setContentLastModifiedAt:</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace content was last modified</Abstract>
+			<DeclaredIn>PRXContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentLastModifiedAt</Declaration>
+			
+			
+			<Anchor>//api/name/contentLastModifiedAt</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/contentLastModifiedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace content was last modified</Abstract>
+			<DeclaredIn>PRXContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentLastModifiedAt</Declaration>
+			
+			
+			<Anchor>//api/name/contentLastModifiedAt</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXContent/contentLastModifiedAt</TokenIdentifier>
+			<Abstract type="html">The time when the smartspace content was last modified</Abstract>
+			<DeclaredIn>PRXContent.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentLastModifiedAt</Declaration>
+			
+			
+			<Anchor>//api/name/contentLastModifiedAt</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/textContentKeys</TokenIdentifier>
 			<Abstract type="html">The list of text content keys</Abstract>
 			<DeclaredIn>PRXContent.h</DeclaredIn>
@@ -150,11 +222,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/initWithTextContents:mediaContents:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContent/initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:</TokenIdentifier>
 			<Abstract type="html">Creates and returns a new PRXContent with a raw list of text contents and media contents</Abstract>
 			<DeclaredIn>PRXContent.m</DeclaredIn>
 			
-			<Declaration>- (instancetype)initWithTextContents:(NSDictionary *)textContants mediaContents:(NSDictionary *)mediaContents</Declaration>
+			<Declaration>- (instancetype)initWithSmartSpaceID:(NSString *)smartSpaceID textContents:(NSDictionary *)textContants mediaContents:(NSDictionary *)mediaContents contentLastModifiedAt:(NSString *)contentLastModifiedAt</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>textContants</Name>
@@ -165,7 +237,7 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">a newly created PRXContent object</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithTextContents:mediaContents:</Anchor>
+			<Anchor>//api/name/initWithSmartSpaceID:textContents:mediaContents:contentLastModifiedAt:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

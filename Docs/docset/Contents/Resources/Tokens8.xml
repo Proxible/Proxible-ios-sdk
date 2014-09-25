@@ -61,6 +61,23 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpaceWithID:</TokenIdentifier>
+			<Abstract type="html">Fetches an immutable copy of the smart space with the specified smart space id stored locally on the disk.</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>- (PRXSmartSpace *)smartSpaceWithID:(NSString *)smartSpaceID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>smartSpaceID</Name>
+					<Abstract type="html">The smart space id</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/smartSpaceWithID:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/allSmartSpaces</TokenIdentifier>
 			<Abstract type="html">Fetches immutable copies of all the smartspaces stored locally on the disk</Abstract>
 			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
@@ -90,11 +107,31 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpaceWithID:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/getAllSmartSpacesShouldIncludeContent:completion:</TokenIdentifier>
+			<Abstract type="html">Downloads and synchronizes all the the smartspaces with the option to include the smart space content from the cloud</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>- (void)getAllSmartSpacesShouldIncludeContent:(BOOL)includeContent completion:(void ( ^ ) ( NSArray *smartSpaces , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>includeContent</Name>
+					<Abstract type="html">Boolean indicating to download and synchronize all content</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion block to be executed after the fetching is done</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getAllSmartSpacesShouldIncludeContent:completion:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/modelSmartSpaceWithID:</TokenIdentifier>
 			<Abstract type="html">Fetches the smart space from the disk (coredata) for a given smartSpaceID from the main context</Abstract>
 			<DeclaredIn>PRXSmartSpaceManager.m</DeclaredIn>
 			
-			<Declaration>- (PRXMSmartSpace *)smartSpaceWithID:(NSString *)smartSpaceID</Declaration>
+			<Declaration>- (PRXMSmartSpace *)modelSmartSpaceWithID:(NSString *)smartSpaceID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>smartSpaceID</Name>
@@ -102,7 +139,7 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The smart space corresponding to the given smartSpaceID</Abstract></ReturnValue>
-			<Anchor>//api/name/smartSpaceWithID:</Anchor>
+			<Anchor>//api/name/modelSmartSpaceWithID:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
