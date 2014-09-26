@@ -16,9 +16,15 @@ Pod::Spec.new do |s|
   s.authors   = { 'Proxible' => 'conrad@proxible.com' }
   s.source   = { :git => 'https://github.com/Proxible/Proxible-ios-sdk.git', :tag => '0.0.3' }
   s.platform = :ios, '7.0'
-  s.source_files = 'Headers/*.h'
-  s.preserve_paths = 'libProxibleSDK.a'
-  s.library = 'ProxibleSDK'
+  
+  s.ios.vendored_frameworks = 'ProxibleSDK.framework'
+  s.source_files = 'ProxibleSDK.framework/Versions/A/Headers/*.h'
+  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
+  s.preserve_paths = 'ProxibleSDK.framework'
+  
+  #s.source_files = 'Headers/*.h'
+  #s.preserve_paths = 'libProxibleSDK.a'
+  $s.library = 'ProxibleSDK'
   s.resources ='ProxibleSDK.bundle'
   
   s.requires_arc = true
