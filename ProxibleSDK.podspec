@@ -17,21 +17,16 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/Proxible/Proxible-ios-sdk.git', :tag => '0.0.3' }
   s.platform = :ios, '7.0'
   
+  # Source Info
+  s.platform     =  :ios, '7.0'
+    s.source       = { :git => 'https://github.com/Proxible/Proxible-ios-sdk', :tag => s.version.to_s }
+  s.source_files = 'ProxibleMobileSDK.framework/Headers/*.h'
   s.ios.vendored_frameworks = 'ProxibleSDK.framework'
-  s.source_files = 'ProxibleSDK.framework/Versions/A/Headers/*.h'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
   s.preserve_paths = 'ProxibleSDK.framework'
-  
-  #s.source_files = 'Headers/*.h'
-  #s.preserve_paths = 'libProxibleSDK.a'
-  #s.library = 'ProxibleSDK'
   s.resources ='ProxibleSDK.bundle'
-  
+
   s.requires_arc = true
-  s.ios.deployment_target = '7.0'
-  s.frameworks = 'CoreBluetooth','CoreLocation'
-  
-  #s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ProxibleSDK/"' }
 
   s.ios.dependency 'AFNetworking', '~> 2.2.3'
   s.ios.dependency 'MagicalRecord', '~> 2.2'
