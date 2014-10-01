@@ -305,6 +305,30 @@ be present in this set.</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/requestAlwaysAuthorization</TokenIdentifier>
+			<Abstract type="html">Requests permission to use location services whenever the app is running.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)requestAlwaysAuthorization</Declaration>
+			
+			
+			<Anchor>//api/name/requestAlwaysAuthorization</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/requestWhenInUseAuthorization</TokenIdentifier>
+			<Abstract type="html">Requests permission to use location services while the app is in the foreground.</Abstract>
+			<DeclaredIn>PRXLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)requestWhenInUseAuthorization</Declaration>
+			
+			
+			<Anchor>//api/name/requestWhenInUseAuthorization</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PRXLocationManager/startMonitoringForSmartSpace:</TokenIdentifier>
 			<Abstract type="html">Starts monitoring the specified Smart Space.</Abstract>
 			<DeclaredIn>PRXLocationManager.h</DeclaredIn>

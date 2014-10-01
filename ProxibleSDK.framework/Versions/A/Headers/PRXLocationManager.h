@@ -130,6 +130,18 @@ extern NSString *const PRXLocationManagerNotificationSmartSpaceItem;// They key 
  */
 -(instancetype)initWithDelegate:(id<PRXLocationManagerDelegate>)delegate;
 
+#pragma  mark - Authorization
+
+/**
+ *  Requests permission to use location services whenever the app is running.
+ */
+-(void)requestAlwaysAuthorization;
+
+/**
+ *  Requests permission to use location services while the app is in the foreground.
+ */
+-(void)requestWhenInUseAuthorization;
+
 #pragma  mark - Smart Space Monitoring
 
 ///-------------------------------------------------
