@@ -16,8 +16,7 @@ Pod::Spec.new do |s|
   s.authors   = { 'Proxible' => 'conrad@proxible.com' }
   s.source   = { :git => 'https://github.com/Proxible/Proxible-ios-sdk.git', :tag => '0.0.5' }
   s.platform = :ios, '7.0'
-  
-  # Source Info
+
   s.platform     =  :ios, '7.0'
   s.source       = { :git => 'https://github.com/Proxible/Proxible-ios-sdk', :tag => s.version.to_s }
   s.source_files = 'ProxibleMobileSDK.framework/Headers/*.h'
@@ -25,7 +24,7 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
   s.preserve_paths = 'ProxibleSDK.framework'
   s.resources ='ProxibleSDK.bundle'
-  s.frameworks = 'CoreLocation', 'CoreData','CoreBluetooth"
+  s.frameworks = 'CoreLocation', 'CoreData','CoreBluetooth'
 
   s.requires_arc = true
 
