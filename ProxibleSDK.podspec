@@ -18,12 +18,12 @@ Pod::Spec.new do |s|
 
   s.platform     =  :ios, '7.0'
   s.source       = { :git => 'https://github.com/Proxible/Proxible-ios-sdk', :tag => s.version.to_s }
-  s.source_files = 'ProxibleMobileSDK.framework/Headers/*.h'
+  s.source_files = 'ProxibleSDK.framework/Versions/A/Headers/*.h'
   s.ios.vendored_frameworks = 'ProxibleSDK.framework'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
   s.preserve_paths = 'ProxibleSDK.framework'
   s.resources ='ProxibleSDK.bundle'
-  s.frameworks = 'CoreLocation', 'CoreData','CoreBluetooth'
+  s.frameworks = 'CoreLocation','CoreData','CoreBluetooth'
 
   s.requires_arc = true
 

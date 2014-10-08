@@ -67,7 +67,6 @@ extern NSString * const PRXTrackingOptionEnabled;
  */
 +(NSString*)apiKey;
 
-
 /**
  *  The current enviroment used for the SDK
  *
