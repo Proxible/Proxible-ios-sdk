@@ -13,9 +13,8 @@ Pod::Spec.new do |s|
   }
   s.summary  = 'ProxibleSDK for micro-location.'
   s.homepage = 'http://www.proxible.com'
-  s.authors   = { 'Proxible' => 'conrad@proxible.com' }
+  s.authors  = { 'Proxible' => 'conrad@proxible.com' }
   s.source   = { :git => 'https://github.com/Proxible/Proxible-ios-sdk.git', :tag => '0.0.5' }
-  s.platform = :ios, '7.0'
 
   s.platform     =  :ios, '7.0'
   s.source       = { :git => 'https://github.com/Proxible/Proxible-ios-sdk', :tag => s.version.to_s }
