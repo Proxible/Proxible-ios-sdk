@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
   s.authors  = { 'Proxible' => 'conrad@proxible.com' }
   s.source   = { :git => 'https://github.com/Proxible/Proxible-ios-sdk.git', :tag => '0.0.5' }
 
-  s.platform     =  :ios, '7.0'
+  s.platform     = :ios, '7.0'
+
   s.source       = { :git => 'https://github.com/Proxible/Proxible-ios-sdk', :tag => s.version.to_s }
   s.source_files = 'ProxibleSDK.framework/Versions/A/Headers/*.h'
   s.ios.vendored_frameworks = 'ProxibleSDK.framework'
