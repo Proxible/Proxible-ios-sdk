@@ -24,6 +24,8 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The SDK demo app will use your location to demo iBeacon Technology</string>
 	<key>UIMainStoryboardFile</key>
 	<string>iPhoneStoryboard</string>
 	<key>UIRequiredDeviceCapabilities</key>
