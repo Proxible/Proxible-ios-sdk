@@ -19,6 +19,7 @@
     //Set Up SDK with applicationID and API Key
     NSString *APIKey  = @"Add your API key";
     NSString *applicationID = @"Add your applicationID";
+    
     [ProxibleSDK setApplicationID:applicationID apiKey:APIKey];
     
     //Set the SDK cloud environment (Development - Staing - Production).
