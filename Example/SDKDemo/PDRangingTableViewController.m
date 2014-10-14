@@ -47,6 +47,11 @@ static NSTimeInterval kPDEnterExitAlertDuration = 3.5f;
     
     if ([PRXLocationManager proximityServicesEnabled]) {
         NSArray *smartSpaces = [[self.locationManager rangedSmartSpaces]allObjects];
+        
+        if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)) {
+            [self.locationManager requestAlwaysAuthorization];
+        }
+        
         [self startRangingBeaconsInSmartSpaces:smartSpaces];
     }else{
         [TSMessage showNotificationInViewController:self title:@"Proximity Services Unavailable" subtitle:@"Proximity services are unavailable turn on location services/BLE to start ranging" type:TSMessageNotificationTypeError duration:kPDEnterExitAlertDuration canBeDismissedByUser:YES];
@@ -70,6 +75,11 @@ static NSTimeInterval kPDEnterExitAlertDuration = 3.5f;
 -(void)selectionController:(PDSmartSpaceSelectionTableViewController *)controller didSelectSmartSpaces:(NSArray *)selectedSmartSpaces{
     
     if ([PRXLocationManager proximityServicesEnabled]) {
+        
+        if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)) {
+            [self.locationManager requestAlwaysAuthorization];
+        }
+        
         [self startRangingBeaconsInSmartSpaces:selectedSmartSpaces];
         
     }else{
@@ -86,6 +96,11 @@ static NSTimeInterval kPDEnterExitAlertDuration = 3.5f;
     
     [spaces enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         PRXSmartSpace *space = (PRXSmartSpace*)obj;
+        
+        if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)) {
+            [self.locationManager requestAlwaysAuthorization];
+        }
+        
         [self.locationManager startRangingBeaconsInSmartSpace:space];
     }];
 }

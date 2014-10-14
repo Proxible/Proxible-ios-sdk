@@ -17,8 +17,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //Set Up SDK with applicationID and API Key
+    /*
     NSString *APIKey  = @"Add your API key";
     NSString *applicationID = @"Add your applicationID";
+     */
+    
+    NSString *APIKey  = @"4845e421-83a0-436c-9ffd-de473dbec69b";
+    NSString *applicationID = @"2";
     
     [ProxibleSDK setApplicationID:applicationID apiKey:APIKey];
     

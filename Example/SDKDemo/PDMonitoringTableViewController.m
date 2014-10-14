@@ -69,6 +69,11 @@ static NSTimeInterval kPDEnterExitAlertDuration = 3.5f;
         [selectedSmartSpaces enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             PRXSmartSpace *space = (PRXSmartSpace*)obj;
             [self.monitoredSmartSpaces setObject:space forKey:space.smartSpaceID];
+            
+            if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)) {
+                [self.locationManager requestAlwaysAuthorization];
+            }
+            
             [self.locationManager startMonitoringForSmartSpace:space];
         }];
         
