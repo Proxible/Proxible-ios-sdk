@@ -21,6 +21,9 @@
     NSString *applicationID = @"Add your applicationID";
     [ProxibleSDK setApplicationID:applicationID apiKey:APIKey];
     
+    //Set the SDK cloud environment (Development - Staing - Production).
+    [ProxibleSDK setEnvironment:Staging];
+    
     return YES;
 }
 
