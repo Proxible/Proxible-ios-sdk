@@ -23,7 +23,7 @@ PODS:
     - MagicalRecord/Core
   - MagicalRecord/Core (2.2)
   - MBProgressHUD (0.9)
-  - ProxibleSDK (0.0.5):
+  - ProxibleSDK (0.0.7):
     - AFNetworking (~> 2.2.3)
     - MagicalRecord (~> 2.2)
   - TSMessages (0.9.10):
@@ -43,7 +43,7 @@ SPEC CHECKSUMS:
   HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
   MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
   MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
-  ProxibleSDK: a8ec371a121763f917465e6d26d6838a62d03efd
+  ProxibleSDK: 25dfde9c4dbd92556b61f909726e9fc1fa743957
   TSMessages: 8598a0645e9d54847f6e5f3b070bef39c493bbf8
 
-COCOAPODS: 0.34.2
+COCOAPODS: 0.34.4
