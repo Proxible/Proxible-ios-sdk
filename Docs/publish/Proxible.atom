@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://www.proxible.com//Proxible/Proxible.atom/20141001222312</id>
+    <id>http://www.proxible.com//Proxible/Proxible.atom/20141110222426</id>
     <title type="text">ProxibleSDK Documentation</title>
     <rights>Copyright © 2014 Proxible. All rights reserved.</rights>
     <link rel="self" href="http://www.proxible.com//Proxible/Proxible.atom"></link>
     <docset:publisherName>Proxible</docset:publisherName>
     <docset:publisherID>com.Proxible.documentation</docset:publisherID>
-    <updated>2014-10-01T22:23:12+02:00</updated>
+    <updated>2014-11-10T22:24:26+01:00</updated>
     <entry>
-        <id>tag:www.proxible.com,2014-10-01:com.Proxible.ProxibleSDK/1.0.0</id>
+        <id>tag:www.proxible.com,2014-11-10:com.Proxible.ProxibleSDK/1.0.0</id>
         <title type="text">ProxibleSDK Documentation</title>
-        <updated>2014-10-01T22:23:12+02:00</updated>
+        <updated>2014-11-10T22:24:26+01:00</updated>
         <content type="text">ProxibleSDK Documentation (v1.0.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http:/www.proxible.com/Proxible/com.Proxible.ProxibleSDK-1.0.xar" length="289553"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http:/www.proxible.com/Proxible/com.Proxible.ProxibleSDK-1.0.xar" length="280302"></link>
         <docset:identifier>com.Proxible.ProxibleSDK</docset:identifier>
         <docset:version>1.0.0</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>

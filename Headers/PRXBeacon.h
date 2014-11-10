@@ -26,6 +26,11 @@
 ///-------------------------------------------------
 
 /**
+ *  The smart space the beacons is belongs to.
+ */
+@property (strong,readonly,nonatomic)PRXSmartSpace *smartSpace;
+
+/**
  The 16 byte UUID of the beacon region
  */
 @property (strong,readonly,nonatomic) NSUUID *proximityUUID;

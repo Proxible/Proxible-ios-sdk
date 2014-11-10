@@ -13,6 +13,42 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXBeacon/setSmartSpace:</TokenIdentifier>
+			<Abstract type="html">The smart space the beacons is belongs to.</Abstract>
+			<DeclaredIn>PRXBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (strong, readonly, nonatomic) PRXSmartSpace *smartSpace</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpace</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXBeacon/smartSpace</TokenIdentifier>
+			<Abstract type="html">The smart space the beacons is belongs to.</Abstract>
+			<DeclaredIn>PRXBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (strong, readonly, nonatomic) PRXSmartSpace *smartSpace</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpace</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXBeacon/smartSpace</TokenIdentifier>
+			<Abstract type="html">The smart space the beacons is belongs to.</Abstract>
+			<DeclaredIn>PRXBeacon.h</DeclaredIn>
+			
+			<Declaration>@property (strong, readonly, nonatomic) PRXSmartSpace *smartSpace</Declaration>
+			
+			
+			<Anchor>//api/name/smartSpace</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PRXBeacon/setProximityUUID:</TokenIdentifier>
 			<Abstract type="html">The 16 byte UUID of the beacon region</Abstract>
 			<DeclaredIn>PRXBeacon.h</DeclaredIn>

@@ -27,6 +27,8 @@ typedef NS_ENUM(NSInteger, PRXEnviroment){
 };
 
 extern NSString * const PRXTrackingOptionEnabled;
+extern NSString *const kPRXGlobalSmartSpaceName;
+extern NSString *const kPRXGlobalSmartSpaceID;
 
 /**
  *  ProxibleSDK

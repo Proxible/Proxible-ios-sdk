@@ -13,14 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PRXSmartSpaceManager/sharedSmartSpaceManager</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXSmartSpaceManager/sharedInstance</TokenIdentifier>
 			<Abstract type="html">Returns a singleton object of PRXSmartSpaceManager</Abstract>
 			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
 			
-			<Declaration>+ (PRXSmartSpaceManager *)sharedSmartSpaceManager</Declaration>
+			<Declaration>+ (PRXSmartSpaceManager *)sharedInstance</Declaration>
 			
 			<ReturnValue><Abstract type="html">shared singleton object of PRXSmartSpaceManager</Abstract></ReturnValue>
-			<Anchor>//api/name/sharedSmartSpaceManager</Anchor>
+			<Anchor>//api/name/sharedInstance</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
@@ -61,6 +61,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/globalSmartSpace</TokenIdentifier>
+			<Abstract type="html">The global smart space represents a smart space that is equal to all smart spaces in the application. It has a default smart space ID and Name. Use the global smart space to monitor or range for any smart space in the application.</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>- (PRXSmartSpace *)globalSmartSpace</Declaration>
+			
+			<ReturnValue><Abstract type="html">PRXSmartSpace with global smart space ID and Name. Nil if no smat spaces have been downloaded yet.</Abstract></ReturnValue>
+			<Anchor>//api/name/globalSmartSpace</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpaceWithID:</TokenIdentifier>
 			<Abstract type="html">Fetches an immutable copy of the smart space with the specified smart space id stored locally on the disk.</Abstract>
 			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
@@ -72,8 +84,59 @@
 					<Abstract type="html">The smart space id</Abstract>
 				</Parameter>
 			</Parameters>
-			
+			<ReturnValue><Abstract type="html">PRXSmartSpace with given id</Abstract></ReturnValue>
 			<Anchor>//api/name/smartSpaceWithID:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpacesWithIDs:</TokenIdentifier>
+			<Abstract type="html">Fetches immutable copies of the smart spaces with the specified smart space ids stored locally on the disk.</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)smartSpacesWithIDs:(NSArray *)smartSpaceIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>smartSpaceIDs</Name>
+					<Abstract type="html">Array of smart space ids</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Array of PRXSmartSpaces with matching id</Abstract></ReturnValue>
+			<Anchor>//api/name/smartSpacesWithIDs:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpaceWithBeacon:</TokenIdentifier>
+			<Abstract type="html">Fetches an immutable copy of the smart space with the specified PRXBeacon stored locally on the disk.</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>- (PRXSmartSpace *)smartSpaceWithBeacon:(PRXBeacon *)beacon</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beacon</Name>
+					<Abstract type="html">The PRXBeacon that belongs to the smart space</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">PRXSmartSpace with the specified PRXBeacon.</Abstract></ReturnValue>
+			<Anchor>//api/name/smartSpaceWithBeacon:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpaceWithName:</TokenIdentifier>
+			<Abstract type="html">Fetches an immutable copy of the smart space with the specified name stored locally on the disk.</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager.h</DeclaredIn>
+			
+			<Declaration>- (PRXSmartSpace *)smartSpaceWithName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the smart space</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">PRXSmartSpace with given name</Abstract></ReturnValue>
+			<Anchor>//api/name/smartSpaceWithName:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
@@ -123,43 +186,6 @@
 			</Parameters>
 			
 			<Anchor>//api/name/getAllSmartSpacesShouldIncludeContent:completion:</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/modelSmartSpaceWithID:</TokenIdentifier>
-			<Abstract type="html">Fetches the smart space from the disk (coredata) for a given smartSpaceID from the main context</Abstract>
-			<DeclaredIn>PRXSmartSpaceManager.m</DeclaredIn>
-			
-			<Declaration>- (PRXMSmartSpace *)modelSmartSpaceWithID:(NSString *)smartSpaceID</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>smartSpaceID</Name>
-					<Abstract type="html">The ID for which a smart space object is fetched</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The smart space corresponding to the given smartSpaceID</Abstract></ReturnValue>
-			<Anchor>//api/name/modelSmartSpaceWithID:</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpaceWithID:inContext:</TokenIdentifier>
-			<Abstract type="html">Fetches the smart space from the disk (coredata) for a given smartSpaceID from the given context</Abstract>
-			<DeclaredIn>PRXSmartSpaceManager.m</DeclaredIn>
-			
-			<Declaration>- (PRXMSmartSpace *)smartSpaceWithID:(NSString *)smartSpaceID inContext:(NSManagedObjectContext *)context</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>smartSpaceID</Name>
-					<Abstract type="html">The ID for which a smart space object is fetched</Abstract>
-				</Parameter><Parameter>
-					<Name>context</Name>
-					<Abstract type="html">The context from which the smart space is fetched</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The smart space corresponding to the given smartSpaceID</Abstract></ReturnValue>
-			<Anchor>//api/name/smartSpaceWithID:inContext:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
@@ -232,6 +258,43 @@
 			
 			
 			<Anchor>//api/name/apiClient</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/modelSmartSpaceWithID:</TokenIdentifier>
+			<Abstract type="html">Fetches the smart space from the disk (coredata) for a given smartSpaceID from the main context</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager__Private.h</DeclaredIn>
+			
+			<Declaration>- (PRXMSmartSpace *)modelSmartSpaceWithID:(NSString *)smartSpaceID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>smartSpaceID</Name>
+					<Abstract type="html">The ID for which a smart space object is fetched</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The smart space corresponding to the given smartSpaceID</Abstract></ReturnValue>
+			<Anchor>//api/name/modelSmartSpaceWithID:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSmartSpaceManager/smartSpaceWithID:inContext:</TokenIdentifier>
+			<Abstract type="html">Fetches the smart space from the disk (coredata) for a given smartSpaceID from the given context</Abstract>
+			<DeclaredIn>PRXSmartSpaceManager__Private.h</DeclaredIn>
+			
+			<Declaration>- (PRXMSmartSpace *)smartSpaceWithID:(NSString *)smartSpaceID inContext:(NSManagedObjectContext *)context</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>smartSpaceID</Name>
+					<Abstract type="html">The ID for which a smart space object is fetched</Abstract>
+				</Parameter><Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The context from which the smart space is fetched</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The smart space corresponding to the given smartSpaceID</Abstract></ReturnValue>
+			<Anchor>//api/name/smartSpaceWithID:inContext:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

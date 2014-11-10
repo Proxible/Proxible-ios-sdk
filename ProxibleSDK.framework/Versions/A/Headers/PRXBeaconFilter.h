@@ -21,6 +21,14 @@
  */
 @interface PRXBeaconFilter : NSObject
 
+/*! Returns a Array with beacons sorted on closest.
+ *
+ *  @param beacons      An array of beacons to sort
+ *
+ *  @return Array of beacons sorted on closest
+ */
++(NSArray*)sortOnClosestBeacons:(NSArray*)beacons;
+
 /*! Returns a Array with beacons filtered on the given proximity.
  *
  *  @param beacons      An array of beacons to filter

@@ -13,6 +13,23 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXBeaconFilter/sortOnClosestBeacons:</TokenIdentifier>
+			<Abstract type="html">Returns a Array with beacons sorted on closest.</Abstract>
+			<DeclaredIn>PRXBeaconFilter.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)sortOnClosestBeacons:(NSArray *)beacons</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>beacons</Name>
+					<Abstract type="html">An array of beacons to sort</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Array of beacons sorted on closest</Abstract></ReturnValue>
+			<Anchor>//api/name/sortOnClosestBeacons:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/PRXBeaconFilter/filterBeacons:withProximity:getClosest:</TokenIdentifier>
 			<Abstract type="html">Returns a Array with beacons filtered on the given proximity.</Abstract>
 			<DeclaredIn>PRXBeaconFilter.h</DeclaredIn>

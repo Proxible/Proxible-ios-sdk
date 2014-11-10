@@ -27,6 +27,8 @@ typedef NS_ENUM(NSInteger, PRXEnviroment){
 };
 
 extern NSString * const PRXTrackingOptionEnabled;
+extern NSString *const kPRXGlobalSmartSpaceName;
+extern NSString *const kPRXGlobalSmartSpaceID;
 
 /**
  *  ProxibleSDK
@@ -66,7 +68,6 @@ extern NSString * const PRXTrackingOptionEnabled;
  * @return The apiKey that is required to access the cloud via the SDK
  */
 +(NSString*)apiKey;
-
 
 /**
  *  The current enviroment used for the SDK

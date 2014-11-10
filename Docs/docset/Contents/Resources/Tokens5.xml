@@ -13,14 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/PRXContentManager/sharedContentManager</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/PRXContentManager/sharedInstance</TokenIdentifier>
 			<Abstract type="html">Returns a singleton object of PRXContentManager</Abstract>
 			<DeclaredIn>PRXContentManager.h</DeclaredIn>
 			
-			<Declaration>+ (PRXContentManager *)sharedContentManager</Declaration>
+			<Declaration>+ (PRXContentManager *)sharedInstance</Declaration>
 			
 			<ReturnValue><Abstract type="html">shared singleton object of PRXContentManager</Abstract></ReturnValue>
-			<Anchor>//api/name/sharedContentManager</Anchor>
+			<Anchor>//api/name/sharedInstance</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

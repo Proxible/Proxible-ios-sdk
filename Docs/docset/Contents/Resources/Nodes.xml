@@ -391,8 +391,8 @@
         </Node>
 		
         <Node id="11" type="file" documentType="reference">
-            <Name>PRXEnviroment</Name>
-            <Path>Constants/PRXEnviroment.html</Path>
+            <Name>PRXEnvironment</Name>
+            <Path>Constants/PRXEnvironment.html</Path>
             
         </Node>
 		<Node id="12" type="file" documentType="reference">

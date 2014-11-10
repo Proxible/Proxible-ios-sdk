@@ -22,7 +22,7 @@
  *
  * @return shared singleton object of PRXContentManager
  */
-+(PRXContentManager*)sharedContentManager;
++(PRXContentManager*)sharedInstance;
 
 /**
  The dispatch queue for `completionBlock`. If `NIL` (default), the main queue is used.

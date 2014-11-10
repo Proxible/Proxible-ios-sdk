@@ -144,6 +144,7 @@ extern NSString *const PRXLocationManagerNotificationSmartSpaceItem;// They key 
 
 #pragma  mark - Smart Space Monitoring
 
+
 ///-------------------------------------------------
 /// @name SmartspaceMonitoring
 ///-------------------------------------------------

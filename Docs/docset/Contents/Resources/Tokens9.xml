@@ -90,7 +90,7 @@
 			<Abstract type="html">The current enviroment used for the SDK</Abstract>
 			<DeclaredIn>ProxibleSDK.h</DeclaredIn>
 			
-			<Declaration>+ (PRXEnviroment)environment</Declaration>
+			<Declaration>+ (PRXEnvironment)environment</Declaration>
 			
 			<ReturnValue><Abstract type="html">Enviroment enum</Abstract></ReturnValue>
 			<Anchor>//api/name/environment</Anchor>
@@ -102,11 +102,11 @@
 			<Abstract type="html">Set the enum to the desired cloud enviroment</Abstract>
 			<DeclaredIn>ProxibleSDK.h</DeclaredIn>
 			
-			<Declaration>+ (void)setEnvironment:(PRXEnviroment)environment</Declaration>
+			<Declaration>+ (void)setEnvironment:(PRXEnvironment)environment</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>enviroment</Name>
-					<Abstract type="html">The envrioment to set the SDK to point to</Abstract>
+					<Name>environment</Name>
+					<Abstract type="html">The environment to set the SDK to point to</Abstract>
 				</Parameter>
 			</Parameters>
 			
