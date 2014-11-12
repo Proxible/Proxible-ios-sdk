@@ -65,6 +65,14 @@
  *
  * @param completion    The completion block to be executed after the downloading is done
  */
--(void)getContentForApplicationWithCompletion:(void(^)(id object, NSError *error))completion;
+-(void)getContentForApplicationWithCompletion:(void(^)(PRXContent *applicationContent, NSError *error))completion;
+
+/**
+ *  Downloads and updates the contents for the application from the cloud
+ *
+ *  @param forceReload Boolean indicating if the contentLastModified property should be ignored. Setting it to YES will always return a response from the cloud. Setting it to NO will check the local content last modified value with that of the cloud and if they are different the cloud will send a response.
+ *  @param completion  The completion block to be executed after the downloading is done
+ */
+-(void)getContentForApplicationForceReload:(BOOL)forceReload completion:(void(^)(PRXContent *applicationContent, NSError *error))completion;
 
 @end

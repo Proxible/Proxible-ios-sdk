@@ -149,7 +149,7 @@
 			<Abstract type="html">Downloads and updates the contents for the application from the cloud</Abstract>
 			<DeclaredIn>PRXContentManager.h</DeclaredIn>
 			
-			<Declaration>- (void)getContentForApplicationWithCompletion:(void ( ^ ) ( id object , NSError *error ))completion</Declaration>
+			<Declaration>- (void)getContentForApplicationWithCompletion:(void ( ^ ) ( PRXContent *applicationContent , NSError *error ))completion</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>completion</Name>
@@ -158,6 +158,26 @@
 			</Parameters>
 			
 			<Anchor>//api/name/getContentForApplicationWithCompletion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXContentManager/getContentForApplicationForceReload:completion:</TokenIdentifier>
+			<Abstract type="html">Downloads and updates the contents for the application from the cloud</Abstract>
+			<DeclaredIn>PRXContentManager.h</DeclaredIn>
+			
+			<Declaration>- (void)getContentForApplicationForceReload:(BOOL)forceReload completion:(void ( ^ ) ( PRXContent *applicationContent , NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>forceReload</Name>
+					<Abstract type="html">Boolean indicating if the contentLastModified property should be ignored. Setting it to YES will always return a response from the cloud. Setting it to NO will check the local content last modified value with that of the cloud and if they are different the cloud will send a response.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion block to be executed after the downloading is done</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentForApplicationForceReload:completion:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

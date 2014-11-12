@@ -20,7 +20,7 @@
 
 
 //Default to staging
-typedef NS_ENUM(NSInteger, PRXEnviroment){
+typedef NS_ENUM(NSInteger, PRXEnvironment){
     Development,
     Staging,
     Producton
@@ -74,13 +74,13 @@ extern NSString *const kPRXGlobalSmartSpaceID;
  *
  *  @return Enviroment enum
  */
-+(PRXEnviroment)environment;
++(PRXEnvironment)environment;
 
 /**
  *  Set the enum to the desired cloud enviroment
  *
- *  @param enviroment The envrioment to set the SDK to point to
+ *  @param environment The environment to set the SDK to point to
  */
-+(void)setEnvironment:(PRXEnviroment)environment;
++(void)setEnvironment:(PRXEnvironment)environment;
 
 @end
