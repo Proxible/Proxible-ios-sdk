@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'ProxibleSDK'
-  s.version  = '0.0.10'
+  s.version  = '0.0.11'
   s.license      = {
     :type => 'Commercial',
     :text => <<-LICENSE
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.summary  = 'ProxibleSDK for micro-location.'
   s.homepage = 'http://www.proxible.com'
   s.authors  = { 'Proxible' => 'conrad@proxible.com' }
-  s.source   = { :git => 'https://github.com/Proxible/Proxible-ios-sdk.git', :tag => '0.0.10' }
+  s.source   = { :git => 'https://github.com/Proxible/Proxible-ios-sdk.git', :tag => '0.0.11' }
 
   s.platform     = :ios, '7.0'
 
